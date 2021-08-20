@@ -1,4 +1,6 @@
-require "infusionsoft/rest/version"
+# frozen_string_literal: true
+
+require_relative "rest/version"
 
 module Infusionsoft
   module Rest
