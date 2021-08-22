@@ -11,5 +11,7 @@ require "infusionsoft/rest"
 # require "pry"
 # Pry.start
 
+client = Infusionsoft::REST::Client.new(access_token: ENV["INFUSIONSOFT_API_KEY"])
+
 require "irb"
 IRB.start(__FILE__)

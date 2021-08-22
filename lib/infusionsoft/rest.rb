@@ -3,8 +3,10 @@
 require_relative "rest/version"
 
 module Infusionsoft
-  module Rest
-    class Error < StandardError; end
+  module REST
+    autoload :Client, "infusionsoft/rest/client"
+    autoload :Error, "infusionsoft/rest/error"
+
     # Your code goes here...
   end
 end

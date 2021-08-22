@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+contacts = Infusionsoft::REST::Contact.list
+contact = Infusionsoft::REST::Contact.create_or_update email: "john@example.com", first_name: "John", last_name: "Doe"
+```
 
 ## Development
 
