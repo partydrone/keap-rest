@@ -17,6 +17,18 @@ module Infusionsoft
         inspected
       end
 
+      def account
+        AccountResource.new(self)
+      end
+
+      def affiliates
+        AffiliatesResource.new(self)
+      end
+
+      def contacts
+        ContactsResource.new(self)
+      end
+
       def connection
         @connection ||= Faraday.new(BASE_URL) do |conn|
           conn.request :oauth2, access_token, token_type: :bearer

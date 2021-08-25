@@ -10,8 +10,13 @@ module Infusionsoft
     autoload :Collection, "infusionsoft/rest/collection"
     autoload :Error, "infusionsoft/rest/error"
     autoload :Object, "infusionsoft/rest/object"
+    autoload :Resource, "infusionsoft/rest/resource"
 
-    # Your code goes here...
+    # High-level categories of API calls
+    autoload :AccountResource, "infusionsoft/rest/resources/account"
+    autoload :AffiliatesResource, "infusionsoft/rest/resources/affiliates"
+    autoload :ContactsResource, "infusionsoft/rest/resources/contacts"
+
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"
     autoload :Affiliate, "infusionsoft/rest/objects/affiliate"
