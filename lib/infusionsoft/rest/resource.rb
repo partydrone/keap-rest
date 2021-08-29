@@ -32,17 +32,17 @@ module Infusionsoft
       def handle_response(response)
         case response.status
         when 400
-          raise Error, "Your request was malformed. #{response.body["error"]}"
+          raise Error, "Bad Request. #{response.body["message"]}"
         when 401
-          raise Error, "You did not supply valid authentication credentials. #{response.body["error"]}"
+          raise Error, "Unauthorized. #{response.body["message"]}"
         when 403
-          raise Error, "You are not allowed to perform that action. #{response.body["error"]}"
+          raise Error, "Forbidden. #{response.body["message"]}"
         when 404
-          raise Error, "No results were found for your request. #{response.body["error"]}"
+          raise Error, "Not Found. #{response.body["message"]}"
         when 500
-          raise Error, "Unable to perform the request due to server-side problems. #{response.body["error"]}"
+          raise Error, "Internet Server Error. #{response.body["message"]}"
         when 503
-          raise Error, "You have been rate limited for sending more than 20 requests per second. #{response.body["error"]}"
+          raise Error, "Service Unavailable. #{response.body["message"]}"
         end
 
         response
