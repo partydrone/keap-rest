@@ -31,7 +31,7 @@ module Infusionsoft
 
       def connection
         @connection ||= Faraday.new(BASE_URL) do |http|
-          http.headers[:accept] = "application/json, */*"
+          http.headers[:accept]     = "application/json, */*"
           http.headers[:user_agent] = "Infusionsoft REST Ruby SDK v#{Infusionsoft::REST::VERSION}"
 
           http.request :oauth2, access_token, token_type: :bearer
