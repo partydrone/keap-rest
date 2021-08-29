@@ -1,5 +1,3 @@
-require 'time'
-
 module Infusionsoft
   module REST
     class Contact < Object
@@ -19,12 +17,8 @@ module Infusionsoft
         [given_name, family_name].join(' ').squeeze(' ')
       end
 
-      def date_created
-        Time.parse super
-      end
-
-      def last_updated
-        Time.parse super
+      def email
+        email_addresses.find { |e| e.field == 'EMAIL1' }.email
       end
     end
   end
