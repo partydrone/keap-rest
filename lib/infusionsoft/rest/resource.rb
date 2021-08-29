@@ -45,6 +45,8 @@ module Infusionsoft
           raise Error, "No results were found for your request. #{response.body["error"]}"
         when 500
           raise Error, "Unable to perform the request due to server-side problems. #{response.body["error"]}"
+        when 503
+          raise Error, "You have been rate limited for sending more than 20 requests per second. #{response.body["error"]}"
         end
 
         response
