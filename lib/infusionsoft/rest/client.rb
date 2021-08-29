@@ -39,7 +39,7 @@ module Infusionsoft
 
           http.response :dates
           http.response :json, content_type: "application/json"
-          http.response :logger, nil, { headers: true, bodies: true } do |logger|
+          http.response :logger, nil, { headers: true, bodies: true, log_level: :debug } do |logger|
             logger.filter(/(Bearer) (\w+)/, '\1 [FILTERED]')
           end
 

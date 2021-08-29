@@ -19,8 +19,8 @@ module Infusionsoft
       def initialize(data:, count:, next_page:, previous_page:)
         @data          = data
         @count         = count
-        @next_page     = next_page.empty? ? nil : next_page
-        @previous_page = previous_page.empty? ? nil : previous_page
+        @next_page     = next_page&.empty? ? nil : next_page
+        @previous_page = previous_page&.empty? ? nil : previous_page
       end
     end
   end

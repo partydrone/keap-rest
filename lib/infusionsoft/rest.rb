@@ -20,6 +20,12 @@ module Infusionsoft
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"
     autoload :Affiliate, "infusionsoft/rest/objects/affiliate"
+    autoload :AffiliateClawback, "infusionsoft/rest/objects/affiliate_clawback"
+    autoload :AffiliateCommission, "infusionsoft/rest/objects/affiliate_commission"
+    autoload :AffiliatePayment, "infusionsoft/rest/objects/affiliate_payment"
+    autoload :AffiliateProgram, "infusionsoft/rest/objects/affiliate_program"
+    autoload :AffiliateRedirect, "infusionsoft/rest/objects/affiliate_redirect"
+    autoload :AffiliateSummary, "infusionsoft/rest/objects/affiliate_summary"
     autoload :Appointment, "infusionsoft/rest/objects/appointment"
     autoload :Campaign, "infusionsoft/rest/objects/campaign"
     autoload :Company, "infusionsoft/rest/objects/company"
