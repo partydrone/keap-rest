@@ -25,6 +25,18 @@ module Infusionsoft
         AffiliatesResource.new(self)
       end
 
+      def appointments
+        AppointmentsResource.new(self)
+      end
+
+      def campaigns
+        CampaignsResource.new(self)
+      end
+
+      def companies
+        CompaniesResource.new(self)
+      end
+
       def contacts
         ContactsResource.new(self)
       end
