@@ -15,6 +15,7 @@ module Infusionsoft
     # High-level categories of API calls
     autoload :AccountResource, "infusionsoft/rest/resources/account"
     autoload :AffiliatesResource, "infusionsoft/rest/resources/affiliates"
+    autoload :CampaignsResource, "infusionsoft/rest/resources/campaigns"
     autoload :ContactsResource, "infusionsoft/rest/resources/contacts"
 
     # Classes used to return a nicer object wrapping the response data
