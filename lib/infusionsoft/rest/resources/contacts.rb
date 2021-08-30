@@ -14,7 +14,7 @@ module Infusionsoft
         Contact.new post_request("contacts", body: attributes).body
       end
 
-      def create_or_update(duplicate_option: 'Email', **attributes)
+      def create_or_update(duplicate_option: "Email", **attributes)
         Contact.new put_request("contacts", body: attributes.merge(duplicate_option: duplicate_option)).body
       end
 

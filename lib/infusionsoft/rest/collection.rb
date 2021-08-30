@@ -9,17 +9,17 @@ module Infusionsoft
 
           new(
             data: body[key].map { |attrs| type.new(attrs) },
-            count: body.dig('count'),
-            next_page: body.dig('next'),
-            previous_page: body.dig('previous')
+            count: body.dig("count"),
+            next_page: body.dig("next"),
+            previous_page: body.dig("previous")
           )
         end
       end
 
       def initialize(data:, count:, next_page:, previous_page:)
-        @data          = data
-        @count         = count
-        @next_page     = next_page&.empty? ? nil : next_page
+        @data = data
+        @count = count
+        @next_page = next_page&.empty? ? nil : next_page
         @previous_page = previous_page&.empty? ? nil : previous_page
       end
     end

@@ -10,15 +10,15 @@ module Infusionsoft
       end
 
       def full_name
-        [given_name, middle_name, family_name].join(' ').squeeze(' ')
+        [given_name, middle_name, family_name].join(" ").squeeze(" ")
       end
 
       def name
-        [given_name, family_name].join(' ').squeeze(' ')
+        [given_name, family_name].join(" ").squeeze(" ")
       end
 
       def email
-        email_addresses.find { |e| e.field == 'EMAIL1' }.email
+        email_addresses.find { |e| e.field == "EMAIL1" }.email
       end
     end
   end

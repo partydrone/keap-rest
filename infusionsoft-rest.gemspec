@@ -3,15 +3,15 @@
 require_relative "lib/infusionsoft/rest/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "infusionsoft-rest"
-  spec.version       = Infusionsoft::REST::VERSION
-  spec.authors       = ["Andrew Porter"]
-  spec.email         = ["partydrone@icloud.com"]
+  spec.name = "infusionsoft-rest"
+  spec.version = Infusionsoft::REST::VERSION
+  spec.authors = ["Andrew Porter"]
+  spec.email = ["partydrone@icloud.com"]
 
-  spec.summary       = "A Ruby SDK for the Infusionsoft REST API."
-  spec.description   = "A Ruby SDK for the Infusionsoft REST API."
-  spec.homepage      = "https://github.com/partydrone/infusionsoft-rest"
-  spec.license       = "MIT"
+  spec.summary = "A Ruby SDK for the Infusionsoft REST API."
+  spec.description = "A Ruby SDK for the Infusionsoft REST API. Infusionsoft REST API documentation can be found at https://developer.infusionsoft.com/docs/rest."
+  spec.homepage = "https://github.com/partydrone/infusionsoft-rest"
+  spec.license = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
@@ -25,15 +25,9 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{\A(?:test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
-
-  # For more information and examples about making a new gem, checkout our
-  # guide at: https://bundler.io/guides/creating_gem.html
 
   spec.add_dependency "faraday", "~> 1.7"
   spec.add_dependency "faraday_middleware", "~> 1.1"

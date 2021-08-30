@@ -7,13 +7,13 @@ module Infusionsoft
 
       def initialize(access_token:, adapter: Faraday.default_adapter, stubs: nil)
         @access_token = access_token
-        @adapter      = adapter
-        @stubs        = stubs
+        @adapter = adapter
+        @stubs = stubs
       end
 
       def inspect
         inspected = super
-        inspected.gsub! @access_token, "#{ '*' * 24 }#{ @access_token[24..-1] }" if @access_token
+        inspected.gsub! @access_token, "#{"*" * 24}#{@access_token[24..]}" if @access_token
         inspected
       end
 
@@ -47,7 +47,7 @@ module Infusionsoft
 
       def connection
         @connection ||= Faraday.new(BASE_URL) do |http|
-          http.headers[:accept]     = "application/json, */*"
+          http.headers[:accept] = "application/json, */*"
           http.headers[:user_agent] = "Infusionsoft REST Ruby SDK v#{Infusionsoft::REST::VERSION}"
 
           http.request :oauth2, access_token, token_type: :bearer
@@ -55,7 +55,7 @@ module Infusionsoft
 
           http.response :dates
           http.response :json, content_type: "application/json"
-          http.response :logger, nil, { headers: true, bodies: true, log_level: :debug } do |logger|
+          http.response :logger, nil, {headers: true, bodies: true, log_level: :debug} do |logger|
             logger.filter(/(Bearer) (\w+)/, '\1 [FILTERED]')
           end
 
