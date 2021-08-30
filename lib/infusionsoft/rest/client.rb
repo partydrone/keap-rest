@@ -41,6 +41,10 @@ module Infusionsoft
         ContactsResource.new(self)
       end
 
+      def locale
+        LocaleResource.new(self)
+      end
+
       def connection
         @connection ||= Faraday.new(BASE_URL) do |http|
           http.headers[:accept]     = "application/json, */*"

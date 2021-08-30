@@ -18,6 +18,7 @@ module Infusionsoft
     autoload :CampaignsResource, "infusionsoft/rest/resources/campaigns"
     autoload :CompaniesResource, "infusionsoft/rest/resources/companies"
     autoload :ContactsResource, "infusionsoft/rest/resources/contacts"
+    autoload :LocaleResource, "infusionsoft/rest/resources/locale"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"
