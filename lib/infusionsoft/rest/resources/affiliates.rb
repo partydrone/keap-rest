@@ -49,6 +49,10 @@ module Infusionsoft
         Collection.from_response(response, key: "summaries", type: AffiliateSummary)
       end
       alias_method :list_summaries, :summaries
+
+      def model
+        OpenStruct.new get_request("affiliates/model").body
+      end
     end
   end
 end

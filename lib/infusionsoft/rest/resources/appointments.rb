@@ -25,6 +25,10 @@ module Infusionsoft
       def delete(appointment_id)
         delete_request("appointments/#{appointment_id}")
       end
+
+      def model
+        OpenStruct.new get_request("appointments/model").body
+      end
     end
   end
 end

@@ -25,6 +25,51 @@ module Infusionsoft
       def delete(contact_id)
         delete_request("contacts/#{contact_id}")
       end
+
+      def credit_cards(contact_id)
+        get_request("contacts/#{contact_id}/creditCards").body
+      end
+      alias_method :list_credit_cards, :credit_cards
+
+      def add_credit_card(contact_id, **attributes)
+        CreditCard.new post_response("contacts/#{contact_id}/creditCards", body: attributes).body
+      end
+
+      def emails(contact_id, **params)
+        response = get_request("contacts/#{contact_id}/emails", params: params)
+        Collection.from_response(response, key: "emails", type: Email)
+      end
+
+      def add_email(contact_id, **attributes)
+        Email.new post_request("contacts/#{contact_id}/emails", body: attributes).body
+      end
+
+      def tags(contact_id, **params)
+        response = get_request("contacts/#{contact_id}/tags", params: params)
+        Collection.from_response(response, key: "tags", type: Tag)
+      end
+      alias_method :list_tags, :tags
+
+      def add_tags(contact_id, **attributes)
+        post_request("contacts/#{contact_id}/tags", body: attributes).body
+      end
+      alias_method :apply_tags, :add_tags
+
+      def remove_tags(contact_id, **params)
+        delete_request("contacts/#{contact_id}/tags", params: params)
+      end
+
+      def remove_tag(contact_id, tag_id)
+        delete_request("contacts/#{contact_id}/tags/#{tag_id}")
+      end
+
+      def model
+        OpenStruct.new get_request("contacts/model").body
+      end
+
+      def create_custom_field(**attributes)
+        OpenStruct.new post_request("contacts/model/customFields", body: attributes).body
+      end
     end
   end
 end
