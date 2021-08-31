@@ -1,0 +1,26 @@
+{
+  "address": {
+    "country_code": "string",
+    "field": "BILLING",
+    "line1": "string",
+    "line2": "string",
+    "locality": "string",
+    "postal_code": "string",
+    "region": "string",
+    "zip_code": "string",
+    "zip_four": "string"
+  },
+  "business_goals": ["string"],
+  "business_primary_color": "string",
+  "business_secondary_color": "string",
+  "business_type": "string",
+  "currency_code": "string",
+  "email": "admin@example.com",
+  "language_tag": "string",
+  "logo_url": "string",
+  "name": "string",
+  "phone": "string",
+  "phone_ext": "string",
+  "time_zone": "string",
+  "website": "string"
+}
