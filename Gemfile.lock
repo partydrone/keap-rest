@@ -61,8 +61,7 @@ GEM
     unicode-display_width (2.0.0)
 
 PLATFORMS
-  x86_64-darwin-20
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   infusionsoft-rest!
@@ -71,4 +70,4 @@ DEPENDENCIES
   standard (~> 1.3)
 
 BUNDLED WITH
-   2.2.22
+   2.1.4
