@@ -1,6 +1,4 @@
 require "ostruct"
-require "delegate"
-require "json"
 
 module Infusionsoft
   module REST

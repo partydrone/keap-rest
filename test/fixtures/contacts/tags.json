@@ -1,0 +1,15 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "tags": [
+    {
+      "date_applied": "2021-09-01T05:47:38.504Z",
+      "tag": {
+        "category": "string",
+        "id": 0,
+        "name": "string"
+      }
+    }
+  ]
+}

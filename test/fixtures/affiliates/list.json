@@ -1,0 +1,18 @@
+{
+  "affiliates": [
+    {
+      "code": "string",
+      "contact_id": 0,
+      "id": 0,
+      "name": "string",
+      "notify_on_lead": true,
+      "notify_on_sale": true,
+      "parent_id": 0,
+      "status": "string",
+      "track_leads_for": 0
+    }
+  ],
+  "count": 0,
+  "next": "string",
+  "previous": "string"
+}

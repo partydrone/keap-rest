@@ -1,0 +1,131 @@
+{
+  "contact": {
+    "company_name": "string",
+    "email": "string",
+    "first_name": "string",
+    "id": 0,
+    "job_title": "string",
+    "last_name": "string"
+  },
+  "creation_date": "string",
+  "id": 0,
+  "lead_affiliate_id": 0,
+  "modification_date": "string",
+  "notes": "string",
+  "order_date": "string",
+  "order_items": [
+    {
+      "billingCycle": 0,
+      "cost": 0,
+      "description": "string",
+      "discount": 0,
+      "frequency": 0,
+      "id": 0,
+      "jobRecurringId": 0,
+      "name": "string",
+      "notes": "string",
+      "numberOfPayments": 0,
+      "orderItemTaxes": [
+        {
+          "id": 0,
+          "name": "string",
+          "orderItemId": 0,
+          "rate": 0
+        }
+      ],
+      "price": 0,
+      "product": {
+        "id": 0,
+        "product_desc": "string",
+        "product_name": "string",
+        "product_options": [
+          {
+            "allow_spaces": true,
+            "can_contain_character": true,
+            "can_contain_number": true,
+            "can_end_with_character": true,
+            "can_end_with_number": true,
+            "can_start_with_character": true,
+            "can_start_with_number": true,
+            "display_index": 0,
+            "id": 0,
+            "label": "string",
+            "max_chars": 0,
+            "min_chars": 0,
+            "name": "string",
+            "required": true,
+            "text_message": "string",
+            "type": "FixedList",
+            "values": [
+              {
+                "id": 0,
+                "index": 0,
+                "is_default": true,
+                "label": "string",
+                "price_adjustment": 0,
+                "sku": "string"
+              }
+            ]
+          }
+        ],
+        "product_price": 0,
+        "product_short_desc": "string",
+        "sku": "string",
+        "status": 0,
+        "subscription_only": true,
+        "subscription_plans": [
+          {
+            "active": true,
+            "cycle": 0,
+            "frequency": 0,
+            "id": 0,
+            "number_of_cycles": 0,
+            "plan_price": 0,
+            "subscription_plan_index": 0,
+            "subscription_plan_name": "string",
+            "url": "string"
+          }
+        ],
+        "url": "string"
+      },
+      "quantity": 0,
+      "recurringBilling": true,
+      "type": "string"
+    }
+  ],
+  "payment_plan": {
+    "auto_charge": true,
+    "credit_card_id": 0,
+    "days_between_payments": 0,
+    "initial_payment_amount": 0,
+    "initial_payment_date": "2021-09-01",
+    "number_of_payments": 0,
+    "payment_gateway": {
+      "merchant_account_id": 0,
+      "use_default": true
+    },
+    "plan_start_date": "2021-09-01"
+  },
+  "refund_total": 0,
+  "sales_affiliate_id": 0,
+  "shipping_information": {
+    "company": "string",
+    "country_code": "string",
+    "first_name": "string",
+    "is_invoice_to_company": true,
+    "last_name": "string",
+    "line1": "string",
+    "line2": "string",
+    "locality": "string",
+    "middle_name": "string",
+    "phone": "string",
+    "region": "string",
+    "zip_code": "string",
+    "zip_four": "string"
+  },
+  "status": "string",
+  "title": "string",
+  "total": 0,
+  "total_due": 0,
+  "total_paid": 0
+}

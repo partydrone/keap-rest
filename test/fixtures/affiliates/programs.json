@@ -1,0 +1,14 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "programs": [
+    {
+      "affiliate_id": 0,
+      "id": 0,
+      "name": "string",
+      "notes": "string",
+      "priority": 0
+    }
+  ]
+}

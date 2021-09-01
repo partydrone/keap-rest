@@ -13,12 +13,13 @@ module Infusionsoft
     autoload :Resource, "infusionsoft/rest/resource"
 
     # High-level categories of API calls
-    autoload :AccountResource, "infusionsoft/rest/resources/account"
-    autoload :AffiliatesResource, "infusionsoft/rest/resources/affiliates"
-    autoload :CampaignsResource, "infusionsoft/rest/resources/campaigns"
-    autoload :CompaniesResource, "infusionsoft/rest/resources/companies"
-    autoload :ContactsResource, "infusionsoft/rest/resources/contacts"
-    autoload :LocaleResource, "infusionsoft/rest/resources/locale"
+    autoload :AccountResource, "infusionsoft/rest/resources/account_resource"
+    autoload :AffiliatesResource, "infusionsoft/rest/resources/affiliates_resource"
+    autoload :CampaignsResource, "infusionsoft/rest/resources/campaigns_resource"
+    autoload :CompaniesResource, "infusionsoft/rest/resources/companies_resource"
+    autoload :ContactsResource, "infusionsoft/rest/resources/contacts_resource"
+    autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
+    autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"
@@ -36,7 +37,6 @@ module Infusionsoft
     autoload :Email, "infusionsoft/rest/objects/email"
     autoload :EmailAddress, "infusionsoft/rest/objects/email_address"
     autoload :File, "infusionsoft/rest/objects/file"
-    # Locale: Figure out how to handle countries and provinces
     autoload :Merchant, "infusionsoft/rest/objects/merchant"
     autoload :Note, "infusionsoft/rest/objects/note"
     autoload :Opportunity, "infusionsoft/rest/objects/opportunity"

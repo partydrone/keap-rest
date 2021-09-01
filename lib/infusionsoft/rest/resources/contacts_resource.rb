@@ -9,6 +9,7 @@ module Infusionsoft
       def get(contact_id)
         Contact.new get_request("contacts/#{contact_id}").body
       end
+      alias_method :retrieve
 
       def create(**attributes)
         Contact.new post_request("contacts", body: attributes).body
@@ -29,16 +30,18 @@ module Infusionsoft
       def credit_cards(contact_id)
         get_request("contacts/#{contact_id}/creditCards").body
       end
-      alias_method :list_credit_cards, :credit_cards
+      alias_method :retrieve_credit_cards, :credit_cards
 
       def add_credit_card(contact_id, **attributes)
         CreditCard.new post_response("contacts/#{contact_id}/creditCards", body: attributes).body
       end
+      alias_method :create_credit_card, :add_credit_card
 
       def emails(contact_id, **params)
         response = get_request("contacts/#{contact_id}/emails", params: params)
         Collection.from_response(response, key: "emails", type: Email)
       end
+      alias_method :list_emails
 
       def add_email(contact_id, **attributes)
         Email.new post_request("contacts/#{contact_id}/emails", body: attributes).body

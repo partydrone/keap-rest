@@ -1,0 +1,89 @@
+{
+  "ScoreValue": "string",
+  "addresses": [
+    {
+      "country_code": "string",
+      "field": "BILLING",
+      "line1": "string",
+      "line2": "string",
+      "locality": "string",
+      "postal_code": "string",
+      "region": "string",
+      "zip_code": "string",
+      "zip_four": "string"
+    }
+  ],
+  "anniversary": "2021-09-01T05:47:38.486Z",
+  "birthday": "2021-09-01T05:47:38.486Z",
+  "company": {
+    "company_name": "string",
+    "id": 0
+  },
+  "company_name": "string",
+  "contact_type": "string",
+  "custom_fields": [
+    {
+      "content": {},
+      "id": 0
+    }
+  ],
+  "date_created": "2021-09-01T05:47:38.486Z",
+  "email_addresses": [
+    {
+      "email": "string",
+      "field": "EMAIL1"
+    }
+  ],
+  "email_opted_in": true,
+  "email_status": "UnengagedMarketable",
+  "family_name": "string",
+  "fax_numbers": [
+    {
+      "field": "FAX1",
+      "number": "string",
+      "type": "string"
+    }
+  ],
+  "given_name": "string",
+  "id": 0,
+  "job_title": "string",
+  "last_updated": "2021-09-01T05:47:38.486Z",
+  "lead_source_id": 0,
+  "middle_name": "string",
+  "opt_in_reason": "string",
+  "origin": {
+    "date": "2021-09-01T05:47:38.486Z",
+    "ip_address": "string"
+  },
+  "owner_id": 0,
+  "phone_numbers": [
+    {
+      "extension": "string",
+      "field": "PHONE1",
+      "number": "string",
+      "type": "string"
+    }
+  ],
+  "preferred_locale": "en_US",
+  "preferred_name": "string",
+  "prefix": "string",
+  "relationships": [
+    {
+      "id": 0,
+      "linked_contact_id": 0,
+      "relationship_type_id": 0
+    }
+  ],
+  "social_accounts": [
+    {
+      "name": "string",
+      "type": "Facebook"
+    }
+  ],
+  "source_type": "APPOINTMENT",
+  "spouse_name": "string",
+  "suffix": "string",
+  "tag_ids": [0],
+  "time_zone": "string",
+  "website": "string"
+}

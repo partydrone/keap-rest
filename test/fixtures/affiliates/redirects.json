@@ -1,0 +1,15 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "redirects": [
+    {
+      "affiliate_id": 0,
+      "id": 0,
+      "local_url_code": "string",
+      "name": "string",
+      "program_ids": [0],
+      "redirect_url": "string"
+    }
+  ]
+}

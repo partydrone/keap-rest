@@ -1,0 +1,33 @@
+{
+  "address": {
+    "country_code": "string",
+    "line1": "string",
+    "line2": "string",
+    "locality": "string",
+    "region": "string",
+    "zip_code": "string",
+    "zip_four": "string"
+  },
+  "company_name": "string",
+  "custom_fields": [
+    {
+      "content": {},
+      "id": 0
+    }
+  ],
+  "email_address": "string",
+  "email_opted_in": true,
+  "email_status": "UnengagedMarketable",
+  "fax_number": {
+    "number": "string",
+    "type": "string"
+  },
+  "id": 0,
+  "notes": "string",
+  "phone_number": {
+    "extension": "string",
+    "number": "string",
+    "type": "string"
+  },
+  "website": "string"
+}

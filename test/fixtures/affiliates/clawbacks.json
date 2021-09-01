@@ -1,0 +1,21 @@
+{
+  "clawbacks": [
+    {
+      "amount": 0,
+      "contact_id": 0,
+      "date_earned": "string",
+      "description": "string",
+      "family_name": "string",
+      "given_name": "string",
+      "invoice_id": 0,
+      "product_name": "string",
+      "sale_affiliate_id": 0,
+      "sold_by_family_name": "string",
+      "sold_by_given_name": "string",
+      "subscription_plan_name": "string"
+    }
+  ],
+  "count": 0,
+  "next": "string",
+  "previous": "string"
+}

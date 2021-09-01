@@ -1,0 +1,25 @@
+{
+  "address": {
+    "country_code": "string",
+    "field": "BILLING",
+    "line1": "string",
+    "line2": "string",
+    "locality": "string",
+    "postal_code": "string",
+    "region": "string",
+    "zip_code": "string",
+    "zip_four": "string"
+  },
+  "card_type": "string",
+  "contact_id": 0,
+  "email_address": "string",
+  "expiration_month": "string",
+  "expiration_year": "string",
+  "id": 0,
+  "maestro_issue_number": "string",
+  "maestro_start_date_month": "string",
+  "maestro_start_date_year": "string",
+  "name_on_card": "string",
+  "validation_message": "string",
+  "validation_status": "string"
+}

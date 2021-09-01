@@ -1,0 +1,14 @@
+{
+  "count": 0,
+  "next": "string",
+  "payments": [
+    {
+      "amount": 0,
+      "date": "string",
+      "id": 0,
+      "notes": "string",
+      "type": "string"
+    }
+  ],
+  "previous": "string"
+}

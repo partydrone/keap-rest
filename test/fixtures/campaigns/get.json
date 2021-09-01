@@ -1,0 +1,53 @@
+{
+  "active_contact_count": 0,
+  "completed_contact_count": 0,
+  "created_by_global_id": 0,
+  "date_created": "2021-09-01T05:47:38.442Z",
+  "error_message": "string",
+  "goals": [
+    {
+      "historical_contact_counts": {
+        "24_hours": 0,
+        "30_days": 0
+      },
+      "id": 0,
+      "name": "string",
+      "next_sequence_ids": [0],
+      "previous_sequence_ids": [0],
+      "type": "WebForm"
+    }
+  ],
+  "id": 0,
+  "locked": true,
+  "name": "string",
+  "published_date": "2021-09-01T05:47:38.442Z",
+  "published_status": true,
+  "published_time_zone": "string",
+  "sequences": [
+    {
+      "active_contact_count": 0,
+      "active_contact_count_completed": 0,
+      "historical_contact_count": {
+        "24_hours": 0,
+        "30_days": 0
+      },
+      "id": 0,
+      "name": "string",
+      "paths": [
+        {
+          "id": 0,
+          "items": [
+            {
+              "id": 0,
+              "name": "string",
+              "next_item_id": 0,
+              "previous_item_id": 0,
+              "type": "NULL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "time_zone": "string"
+}

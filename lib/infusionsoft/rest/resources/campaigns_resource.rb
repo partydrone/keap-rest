@@ -9,6 +9,7 @@ module Infusionsoft
       def get(campaign_id)
         Campaign.new get_request("campaigns/#{campaign_id}").body
       end
+      alias_method :retrieve
 
       def add_contacts_to_sequence(campaign_id, sequence_id)
         post_request("campaigns/#{campaign_id}/sequences/#{sequence_id}/contacts")

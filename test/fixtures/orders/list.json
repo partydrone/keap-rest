@@ -1,0 +1,95 @@
+{
+  "count": 0,
+  "next": "string",
+  "orders": [
+    {
+      "allow_payment": true,
+      "allow_paypal": true,
+      "contact": {
+        "company_name": "string",
+        "email": "string",
+        "first_name": "string",
+        "id": 0,
+        "job_title": "string",
+        "last_name": "string"
+      },
+      "creation_date": "string",
+      "id": 0,
+      "lead_affiliate_id": 0,
+      "modification_date": "string",
+      "notes": "string",
+      "order_date": "string",
+      "order_items": [
+        {
+          "cost": 0,
+          "description": "string",
+          "discount": 0,
+          "id": 0,
+          "jobRecurringId": 0,
+          "name": "string",
+          "notes": "string",
+          "price": 0,
+          "product": {
+            "description": "string",
+            "id": 0,
+            "name": "string",
+            "shippable": true,
+            "sku": "string",
+            "taxable": true
+          },
+          "quantity": 0,
+          "subscriptionPlan": {
+            "active": true,
+            "cycle": 0,
+            "frequency": 0,
+            "id": 0,
+            "number_of_cycles": 0,
+            "plan_price": 0,
+            "subscription_plan_index": 0,
+            "subscription_plan_name": "string"
+          },
+          "type": "string"
+        }
+      ],
+      "payment_plan": {
+        "auto_charge": true,
+        "credit_card_id": 0,
+        "days_between_payments": 0,
+        "initial_payment_amount": 0,
+        "initial_payment_date": "string",
+        "number_of_payments": 0,
+        "payment_gateway": {
+          "merchant_account_id": 0,
+          "use_default": true
+        },
+        "plan_start_date": "string"
+      },
+      "recurring": true,
+      "refund_total": 0,
+      "sales_affiliate_id": 0,
+      "shipping_information": {
+        "city": "string",
+        "company": "string",
+        "country": "string",
+        "first_name": "string",
+        "id": 0,
+        "invoiceToCompany": true,
+        "last_name": "string",
+        "middle_name": "string",
+        "phone": "string",
+        "state": "string",
+        "street1": "string",
+        "street2": "string",
+        "zip": "string"
+      },
+      "source_type": "INVOICE",
+      "status": "string",
+      "terms": "string",
+      "title": "string",
+      "total": 0,
+      "total_due": 0,
+      "total_paid": 0
+    }
+  ],
+  "previous": "string"
+}

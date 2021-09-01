@@ -1,0 +1,8 @@
+[
+  {
+    "card_number": "string",
+    "card_type": "string",
+    "id": 0,
+    "validation_status": "string"
+  }
+]

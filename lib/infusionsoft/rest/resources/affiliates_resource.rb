@@ -9,6 +9,7 @@ module Infusionsoft
       def get(affiliate_id)
         Affiliate.new get_request("affiliates/#{affiliate_id}", params: params).body
       end
+      alias_method :retrieve
 
       def create(**attributes)
         Affiliate.new post_request("affiliates", body: attributes).body

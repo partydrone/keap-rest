@@ -9,6 +9,7 @@ module Infusionsoft
       def get(appointment_id)
         Appointment.new get_request("appointments/#{appointment_id}").body
       end
+      alias_method :retrieve
 
       def create(**attributes)
         Appointment.new post_request("appointments", body: attributes).body
@@ -28,6 +29,10 @@ module Infusionsoft
 
       def model
         OpenStruct.new get_request("appointments/model").body
+      end
+
+      def create_custom_field(**attributes)
+        OpenStruct.new post_request("appointments/model/cusomFields", body: attributes)
       end
     end
   end

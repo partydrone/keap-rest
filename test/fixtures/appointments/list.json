@@ -1,0 +1,18 @@
+{
+  "appointments": [
+    {
+      "contact_id": 0,
+      "description": "string",
+      "end_date": "string",
+      "location": "string",
+      "remind_time": 0,
+      "start_date": "string",
+      "title": "string",
+      "user": 0
+    }
+  ],
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "sync_token": "string"
+}

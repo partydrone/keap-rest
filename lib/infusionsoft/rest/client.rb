@@ -1,6 +1,8 @@
 module Infusionsoft
   module REST
     class Client
+      include Infusionsoft::REST::Connection
+
       BASE_URL = "https://api.infusionsoft.com/crm/rest/v1"
 
       attr_reader :access_token, :adapter
@@ -45,23 +47,10 @@ module Infusionsoft
         LocaleResource.new(self)
       end
 
-      def connection
-        @connection ||= Faraday.new(BASE_URL) do |http|
-          http.headers[:accept] = "application/json, */*"
-          http.headers[:user_agent] = "Infusionsoft REST Ruby SDK v#{Infusionsoft::REST::VERSION}"
-
-          http.request :oauth2, access_token, token_type: :bearer
-          http.request :json
-
-          http.response :dates
-          http.response :json, content_type: "application/json"
-          # http.response :logger do |logger|
-          #   logger.filter(/(Bearer) (\w+)/, '\1 [FILTERED]')
-          # end
-
-          http.adapter adapter, @stubs
-        end
+      def orders
+        OrdersResource.new(self)
       end
+
     end
   end
 end
