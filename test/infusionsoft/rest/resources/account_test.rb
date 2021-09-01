@@ -11,6 +11,5 @@ class AccountResourceTest < Minitest::Test
   end
 
   def test_update
-
   end
 end
