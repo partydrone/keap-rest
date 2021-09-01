@@ -50,7 +50,6 @@ module Infusionsoft
       def orders
         OrdersResource.new(self)
       end
-
     end
   end
 end

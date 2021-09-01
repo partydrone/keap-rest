@@ -36,7 +36,7 @@ module Infusionsoft
         # results—results without a key—which makes it difficult to wrap each
         # item in the array in a Ruby object.
         response = get_request("orders/#{order_id}/payments")
-        response.body.map |payment|
+        response.body.map do |payment|
           OpenStruct.new payment
         end
       end
