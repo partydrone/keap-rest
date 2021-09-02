@@ -32,13 +32,23 @@ module Infusionsoft
       end
 
       def get_payments(order_id)
-        # NOTE: This one is tricky because it returns an array of un-labeled
-        # results—results without a key—which makes it difficult to wrap each
-        # item in the array in a Ruby object.
         response = get_request("orders/#{order_id}/payments")
-        response.body.map do |payment|
-          OpenStruct.new payment
-        end
+        response.body.map { |payment| OrderPayment.new payment }
+      end
+      alias_method :retrieve_payments, :get_payments
+
+      def create_payment(order_id, **attributes)
+        OrderPayment.new post_request("orders/#{order_id}/payments", body: attributes)
+      end
+
+      def get_transactions(order_id)
+        response = get_request("orders/#{order_id}/transactions")
+        Collection.from_response(response, key: "transactions", type: OrderTransaction)
+      end
+      alias_method :retrieve_transactions, :get_transactions
+
+      def model
+        Object.new get_request("orders/model").body
       end
     end
   end

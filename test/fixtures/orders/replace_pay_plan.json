@@ -1,0 +1,13 @@
+{
+  "auto_charge": true,
+  "credit_card_id": 0,
+  "days_between_payments": 0,
+  "initial_payment_amount": 0,
+  "initial_payment_date": "2021-09-01",
+  "number_of_payments": 0,
+  "payment_gateway": {
+    "merchant_account_id": 0,
+    "use_default": true
+  },
+  "plan_start_date": "2021-09-01"
+}

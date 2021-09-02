@@ -1,0 +1,14 @@
+[
+  {
+    "amount": 0,
+    "id": 0,
+    "invoice_id": 0,
+    "last_updated": "2021-09-01T05:47:38.543Z",
+    "note": "string",
+    "pay_date": "2021-09-01T05:47:38.543Z",
+    "pay_status": "string",
+    "payment_id": 0,
+    "refund_invoice_payment_id": 0,
+    "skip_commission": true
+  }
+]

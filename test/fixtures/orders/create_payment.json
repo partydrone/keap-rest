@@ -1,0 +1,7 @@
+{
+  "id": 0,
+  "invoice_id": 0,
+  "payment_amount": 0,
+  "payment_status": "string",
+  "transaction_id": 0
+}
