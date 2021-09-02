@@ -1,0 +1,19 @@
+{
+  "custom_fields": [
+    {
+      "field_name": "string",
+      "field_type": "Currency",
+      "id": 0,
+      "label": "string",
+      "options": [
+        {
+          "id": "string",
+          "label": "string",
+          "options": [{}]
+        }
+      ],
+      "record_type": "CONTACT"
+    }
+  ],
+  "optional_properties": ["string"]
+}

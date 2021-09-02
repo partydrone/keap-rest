@@ -1,0 +1,27 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "subscriptions": [
+    {
+      "active": true,
+      "allow_tax": true,
+      "auto_charge": true,
+      "billing_amount": 0,
+      "billing_cycle": "YEAR",
+      "billing_frequency": 0,
+      "contact_id": 0,
+      "credit_card_id": 0,
+      "end_date": "2021-09-01",
+      "id": 0,
+      "next_bill_date": "2021-09-01",
+      "payment_gateway_id": 0,
+      "product_id": 0,
+      "quantity": 0,
+      "sale_affiliate_id": 0,
+      "start_date": "2021-09-01",
+      "subscription_plan_id": 0,
+      "use_default_payment_gateway": true
+    }
+  ]
+}

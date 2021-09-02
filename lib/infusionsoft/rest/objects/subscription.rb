@@ -1,6 +1,6 @@
 module Infusionsoft
   module REST
-    class ProductSubscription < Object
+    class Subscription < Object
     end
   end
 end
