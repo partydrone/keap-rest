@@ -21,6 +21,7 @@ module Infusionsoft
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
+    autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"

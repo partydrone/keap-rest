@@ -1,6 +1,6 @@
 module Infusionsoft
   module REST
-    class OrderTransaction < Object
+    class Transaction < Object
     end
   end
 end
