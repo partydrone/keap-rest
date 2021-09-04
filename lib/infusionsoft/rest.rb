@@ -21,6 +21,7 @@ module Infusionsoft
     autoload :EmailAddressesResource, "infusionsoft/rest/resources/email_addresses_resource"
     autoload :EmailsResource, "infusionsoft/rest/resources/emails_resource"
     autoload :FilesResource, "infusionsoft/rest/resources/files_resource"
+    autoload :HooksResource, "infusionsoft/rest/resources/hooks_resource"
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
     autoload :MerchantsResource, "infusionsoft/rest/resources/merchants_resource"
     autoload :NotesResource, "infusionsoft/rest/resources/notes_resource"
@@ -46,6 +47,7 @@ module Infusionsoft
     autoload :Email, "infusionsoft/rest/objects/email"
     autoload :EmailAddress, "infusionsoft/rest/objects/email_address"
     autoload :File, "infusionsoft/rest/objects/file"
+    autoload :HookSubscription, "infusionsoft/rest/objects/hook_subscription"
     autoload :Merchant, "infusionsoft/rest/objects/merchant"
     autoload :Note, "infusionsoft/rest/objects/note"
     autoload :Opportunity, "infusionsoft/rest/objects/opportunity"
@@ -57,7 +59,6 @@ module Infusionsoft
     autoload :Product, "infusionsoft/rest/objects/product"
     autoload :ProductImage, "infusionsoft/rest/objects/product_image"
     autoload :ProductSubscription, "infusionsoft/rest/objects/product_subscription"
-    # ProductStatuses
     autoload :Stage, "infusionsoft/rest/objects/stage"
     autoload :Subscription, "infusionsoft/rest/objects/subscription"
     autoload :Tag, "infusionsoft/rest/objects/tag"

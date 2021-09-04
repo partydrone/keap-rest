@@ -53,6 +53,10 @@ module Infusionsoft
         FilesResource.new(self)
       end
 
+      def hooks
+        HooksResource.new(self)
+      end
+
       def locale
         LocaleResource.new(self)
       end
