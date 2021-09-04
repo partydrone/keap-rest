@@ -1,0 +1,15 @@
+{
+  "body": "string",
+  "contact_id": 0,
+  "date_created": "2021-09-04T18:35:50.210Z",
+  "id": 0,
+  "last_updated": "2021-09-04T18:35:50.210Z",
+  "last_updated_by": {
+    "family_name": "string",
+    "given_name": "string",
+    "user_id": 0
+  },
+  "title": "string",
+  "type": "Appointment",
+  "user_id": 0
+}

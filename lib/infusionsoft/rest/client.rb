@@ -61,6 +61,10 @@ module Infusionsoft
         MerchantsResource.new(self)
       end
 
+      def notes
+        NotesResource.new(self)
+      end
+
       def orders
         OrdersResource.new(self)
       end
