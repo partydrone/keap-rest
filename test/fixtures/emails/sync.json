@@ -1,0 +1,49 @@
+{
+  "emails": [
+    {
+      "clicked_date": "2021-09-04T18:35:50.161Z",
+      "contact_id": 0,
+      "headers": "string",
+      "html_content": "string",
+      "id": 0,
+      "opened_date": "2021-09-04T18:35:50.161Z",
+      "original_provider": "UNKNOWN",
+      "original_provider_id": "string",
+      "plain_content": "string",
+      "provider_source_id": "string",
+      "received_date": "2021-09-04T18:35:50.161Z",
+      "sent_date": "2021-09-04T18:35:50.161Z",
+      "sent_from_address": "string",
+      "sent_from_reply_address": "string",
+      "sent_to_address": "string",
+      "sent_to_bcc_addresses": "string",
+      "sent_to_cc_addresses": "string",
+      "subject": "string"
+    }
+  ],
+  "errors": [
+    {
+      "email": {
+        "clicked_date": "2021-09-04T18:35:50.161Z",
+        "contact_id": 0,
+        "headers": "string",
+        "html_content": "string",
+        "id": 0,
+        "opened_date": "2021-09-04T18:35:50.161Z",
+        "original_provider": "UNKNOWN",
+        "original_provider_id": "string",
+        "plain_content": "string",
+        "provider_source_id": "string",
+        "received_date": "2021-09-04T18:35:50.161Z",
+        "sent_date": "2021-09-04T18:35:50.161Z",
+        "sent_from_address": "string",
+        "sent_from_reply_address": "string",
+        "sent_to_address": "string",
+        "sent_to_bcc_addresses": "string",
+        "sent_to_cc_addresses": "string",
+        "subject": "string"
+      },
+      "error_message": "string"
+    }
+  ]
+}
