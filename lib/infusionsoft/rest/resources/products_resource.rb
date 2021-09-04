@@ -46,7 +46,7 @@ module Infusionsoft
 
       # WARNING: Deprecated
       def sync(**params)
-        reponse = get_request("products/sync", params: params)
+        response = get_request("products/sync", params: params)
         Collection.from_response(response, key: "product_statuses", type: Product)
         # TODO: Create custom collection class that includes `sync_token`
         # at the root node.

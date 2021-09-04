@@ -31,7 +31,7 @@ module Infusionsoft
       def update(key, **attributes)
         HookSubscription.new put_request("hooks/#{key}", body: attributes).body
       end
-      alias_method :create_subscription, :create
+      alias_method :update_subscription, :update
 
       def delete(key)
         delete_request("hooks/#{key}")

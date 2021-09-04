@@ -6,7 +6,7 @@ module Infusionsoft
       end
 
       def to_a
-        value.split(',')
+        value.split(",")
       end
     end
   end
