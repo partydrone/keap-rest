@@ -26,6 +26,7 @@ module Infusionsoft
     autoload :NotesResource, "infusionsoft/rest/resources/notes_resource"
     autoload :OpportunitiesResource, "infusionsoft/rest/resources/opportunities_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
+    autoload :ProductsResource, "infusionsoft/rest/resources/products_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
 

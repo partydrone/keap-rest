@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "cycle_type": "YEAR",
+  "frequency": 0,
+  "id": 0,
+  "number_of_cycles": 0,
+  "plan_price": 0,
+  "subscription_plan_index": 0,
+  "subscription_plan_name": "string",
+  "url": "string"
+}

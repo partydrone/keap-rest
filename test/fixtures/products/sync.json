@@ -1,0 +1,65 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "product_statuses": [
+    {
+      "product": {
+        "id": 0,
+        "product_desc": "string",
+        "product_name": "string",
+        "product_options": [
+          {
+            "allow_spaces": true,
+            "can_contain_character": true,
+            "can_contain_number": true,
+            "can_end_with_character": true,
+            "can_end_with_number": true,
+            "can_start_with_character": true,
+            "can_start_with_number": true,
+            "display_index": 0,
+            "id": 0,
+            "label": "string",
+            "max_chars": 0,
+            "min_chars": 0,
+            "name": "string",
+            "required": true,
+            "text_message": "string",
+            "type": "FixedList",
+            "values": [
+              {
+                "id": 0,
+                "index": 0,
+                "is_default": true,
+                "label": "string",
+                "price_adjustment": 0,
+                "sku": "string"
+              }
+            ]
+          }
+        ],
+        "product_price": 0,
+        "product_short_desc": "string",
+        "sku": "string",
+        "status": 0,
+        "subscription_only": true,
+        "subscription_plans": [
+          {
+            "active": true,
+            "cycle": 0,
+            "frequency": 0,
+            "id": 0,
+            "number_of_cycles": 0,
+            "plan_price": 0,
+            "subscription_plan_index": 0,
+            "subscription_plan_name": "string",
+            "url": "string"
+          }
+        ],
+        "url": "string"
+      },
+      "status": "CREATED"
+    }
+  ],
+  "sync_token": "string"
+}

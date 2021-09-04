@@ -73,6 +73,10 @@ module Infusionsoft
         OrdersResource.new(self)
       end
 
+      def products
+        ProductsResource.new(self)
+      end
+
       def subscriptions
         SubscriptionsResource.new(self)
       end
