@@ -22,6 +22,7 @@ module Infusionsoft
     autoload :EmailsResource, "infusionsoft/rest/resources/emails_resource"
     autoload :FilesResource, "infusionsoft/rest/resources/files_resource"
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
+    autoload :MerchantsResource, "infusionsoft/rest/resources/merchants_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"

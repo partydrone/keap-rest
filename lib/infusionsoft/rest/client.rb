@@ -57,6 +57,10 @@ module Infusionsoft
         LocaleResource.new(self)
       end
 
+      def merchants
+        MerchantsResource.new(self)
+      end
+
       def orders
         OrdersResource.new(self)
       end

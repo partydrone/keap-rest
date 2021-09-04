@@ -1,0 +1,11 @@
+{
+  "default_merchant_account": 0,
+  "merchant_accounts": [
+    {
+      "account_name": "string",
+      "id": 0,
+      "is_test": true,
+      "type": "string"
+    }
+  ]
+}
