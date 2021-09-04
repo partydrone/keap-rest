@@ -24,6 +24,7 @@ module Infusionsoft
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
     autoload :MerchantsResource, "infusionsoft/rest/resources/merchants_resource"
     autoload :NotesResource, "infusionsoft/rest/resources/notes_resource"
+    autoload :OpportunitiesResource, "infusionsoft/rest/resources/opportunities_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
@@ -56,6 +57,7 @@ module Infusionsoft
     autoload :ProductImage, "infusionsoft/rest/objects/product_image"
     autoload :ProductSubscription, "infusionsoft/rest/objects/product_subscription"
     # ProductStatuses
+    autoload :Stage, "infusionsoft/rest/objects/stage"
     autoload :Subscription, "infusionsoft/rest/objects/subscription"
     autoload :Tag, "infusionsoft/rest/objects/tag"
     autoload :Task, "infusionsoft/rest/objects/task"

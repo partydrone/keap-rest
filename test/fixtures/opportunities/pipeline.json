@@ -1,0 +1,10 @@
+[
+  {
+    "end_stage": true,
+    "is_default": true,
+    "stage_count": 0,
+    "stage_id": 0,
+    "stage_name": "string",
+    "stage_order": 0
+  }
+]

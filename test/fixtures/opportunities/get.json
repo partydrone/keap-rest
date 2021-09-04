@@ -1,0 +1,54 @@
+{
+  "affiliate_id": 0,
+  "contact": {
+    "company_name": "string",
+    "email": "string",
+    "first_name": "string",
+    "id": 0,
+    "job_title": "string",
+    "last_name": "string",
+    "phone_number": "string"
+  },
+  "custom_fields": [
+    {
+      "content": {},
+      "id": 0
+    }
+  ],
+  "date_created": "2021-09-04T18:35:50.226Z",
+  "estimated_close_date": "2021-09-04T18:35:50.226Z",
+  "id": 0,
+  "include_in_forecast": 0,
+  "last_updated": "2021-09-04T18:35:50.226Z",
+  "next_action_date": "2021-09-04T18:35:50.226Z",
+  "next_action_notes": "string",
+  "opportunity_notes": "string",
+  "opportunity_title": "string",
+  "projected_revenue_high": 0,
+  "projected_revenue_low": 0,
+  "stage": {
+    "details": {
+      "check_list_items": [
+        {
+          "description": "string",
+          "done_date": "2021-09-04T18:35:50.227Z",
+          "id": 0,
+          "instance_id": 0,
+          "item_order": 0,
+          "required": true
+        }
+      ],
+      "probability": 0,
+      "stage_order": 0,
+      "target_num_days": 0
+    },
+    "id": 0,
+    "name": "string",
+    "reasons": ["string"]
+  },
+  "user": {
+    "first_name": "string",
+    "id": 0,
+    "last_name": "string"
+  }
+}

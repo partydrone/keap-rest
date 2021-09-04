@@ -65,6 +65,10 @@ module Infusionsoft
         NotesResource.new(self)
       end
 
+      def opportunities
+        OpportunitiesResource.new(self)
+      end
+
       def orders
         OrdersResource.new(self)
       end
