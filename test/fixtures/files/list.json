@@ -1,0 +1,21 @@
+{
+  "count": 0,
+  "files": [
+    {
+      "category": "Attachments",
+      "contact_id": 0,
+      "created_by": 0,
+      "date_created": "2021-09-04T18:35:50.170Z",
+      "download_url": "string",
+      "file_box_type": "Application",
+      "file_name": "string",
+      "file_size": 0,
+      "id": 0,
+      "last_updated": "2021-09-04T18:35:50.170Z",
+      "public": true,
+      "remote_file_key": "string"
+    }
+  ],
+  "next": "string",
+  "previous": "string"
+}

@@ -41,6 +41,18 @@ module Infusionsoft
         ContactsResource.new(self)
       end
 
+      def email_addresses
+        EmailAddressesResource.new(self)
+      end
+
+      def emails
+        EmailsResource.new(self)
+      end
+
+      def files
+        FilesResource.new(self)
+      end
+
       def locale
         LocaleResource.new(self)
       end
@@ -55,14 +67,6 @@ module Infusionsoft
 
       def transactions
         TransactionsResource.new(self)
-      end
-
-      def emails
-        EmailsResource.new(self)
-      end
-
-      def email_addresses
-        EmailAddressesResource.new(self)
       end
 
       def connection

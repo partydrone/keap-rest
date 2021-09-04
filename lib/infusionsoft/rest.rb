@@ -20,6 +20,7 @@ module Infusionsoft
     autoload :ContactsResource, "infusionsoft/rest/resources/contacts_resource"
     autoload :EmailAddressesResource, "infusionsoft/rest/resources/email_addresses_resource"
     autoload :EmailsResource, "infusionsoft/rest/resources/emails_resource"
+    autoload :FilesResource, "infusionsoft/rest/resources/files_resource"
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
