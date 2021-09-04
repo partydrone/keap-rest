@@ -61,6 +61,10 @@ module Infusionsoft
         EmailsResource.new(self)
       end
 
+      def email_addresses
+        EmailAddressesResource.new(self)
+      end
+
       def connection
         @connection ||= Faraday.new(BASE_URL) do |http|
           http.headers[:accept] = "application/json, */*"

@@ -18,6 +18,7 @@ module Infusionsoft
     autoload :CampaignsResource, "infusionsoft/rest/resources/campaigns_resource"
     autoload :CompaniesResource, "infusionsoft/rest/resources/companies_resource"
     autoload :ContactsResource, "infusionsoft/rest/resources/contacts_resource"
+    autoload :EmailAddressesResource, "infusionsoft/rest/resources/email_addresses_resource"
     autoload :EmailsResource, "infusionsoft/rest/resources/emails_resource"
     autoload :LocaleResource, "infusionsoft/rest/resources/locale_resource"
     autoload :OrdersResource, "infusionsoft/rest/resources/orders_resource"
