@@ -81,6 +81,10 @@ module Infusionsoft
         ProductsResource.new(self)
       end
 
+      def settings
+        SettingsResource.new(self)
+      end
+
       def subscriptions
         SubscriptionsResource.new(self)
       end

@@ -1,0 +1,115 @@
+{
+  "affiliate": {
+    "choose_affiliate": true,
+    "commission": {
+      "calculation_type": "string",
+      "levels": 0,
+      "participant_types": "string"
+    },
+    "custom_affiliate_url": "string",
+    "display_affiliate_ip_address": true,
+    "do_not_notify_affiliate": true,
+    "skip_pay_if_unused": true,
+    "use_referral_history_if_no_tracking_cookie": true
+  },
+  "application": {
+    "company": {
+      "caller_id_number": "string",
+      "city": "string",
+      "country": "string",
+      "email": "string",
+      "name": "string",
+      "phone": "string",
+      "phone_ext": "string",
+      "state": "string",
+      "street_address_1": "string",
+      "street_address_2": "string",
+      "web_logo_url": "string",
+      "website": "string",
+      "zip": "string"
+    },
+    "default_view_locale": "string",
+    "features_enabled": {
+      "marketing": true
+    },
+    "time_zone": "string"
+  },
+  "appointment": {
+    "appointment_types": "string",
+    "share_opportunity_with_related_user": true
+  },
+  "contact": {
+    "address_labels": {
+      "line_1": "string",
+      "line_2": "string",
+      "line_3": "string"
+    },
+    "contact_types": "string",
+    "default_new_contact_form": "string",
+    "disable_contact_edit_in_client_login": true,
+    "fax_types": "string",
+    "phone_types": "string",
+    "suffix_types": "string",
+    "title_types": "string"
+  },
+  "ecommerce": {
+    "credit_card_types": "string",
+    "currency": "string",
+    "default_charge_max_retry_attempts": 0,
+    "default_country": "string",
+    "default_merchant": "string",
+    "default_number_of_days_between_charge_attempts": 0,
+    "default_tax": "string",
+    "default_to_auto_charge": true,
+    "merchant_account_max_retry_attempts": 0,
+    "payment_types": "string",
+    "promo_codes": "string",
+    "track_cost_per_unit": true,
+    "track_inventory": true
+  },
+  "email": {
+    "append_contact_key_to_links": true,
+    "default_opt_in_link": "string",
+    "default_opt_out_link": "string",
+    "hide_emails_to_and_from_domains": "string",
+    "whitelisted_domains": "string"
+  },
+  "forms": {
+    "spam_filters_enabled": true
+  },
+  "fulfillment": {
+    "default_message_fields": "string",
+    "default_message_to": "string"
+  },
+  "invoice": {
+    "tax_label": "string"
+  },
+  "note": {
+    "appointment_types": "string",
+    "share_opportunity_with_related_user": true
+  },
+  "opportunity": {
+    "default_stage": "string",
+    "states": {
+      "active": {
+        "stages": "string"
+      },
+      "loss": {
+        "reasons": "string",
+        "stage": "string"
+      },
+      "win": {
+        "reasons": "string",
+        "stage": "string"
+      }
+    }
+  },
+  "task": {
+    "appointment_types": "string",
+    "share_opportunity_with_related_user": true
+  },
+  "template": {
+    "default_country_code": 0,
+    "default_user_id": 0
+  }
+}
