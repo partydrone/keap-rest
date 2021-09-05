@@ -31,6 +31,10 @@ module Infusionsoft
           ENV["INFUSIONSOFT_REST_CLIENT_SECRET"] || ENV["INFUSIONSOFT_CLIENT_SECRET"]
         end
 
+        def redirect_uri
+          ENV["INFUSIONSOFT_REST_REDIRECT_URI"] || ENV["INFUSIONSOFT_REDIRECT_URI"]
+        end
+
         def stubs
         end
 

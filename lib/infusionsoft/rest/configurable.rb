@@ -1,7 +1,7 @@
 module Infusionsoft
   module REST
     module Configurable
-      attr_accessor :access_token, :adapter, :api_endpoint, :client_id, :client_secret, :stubs, :user_agent
+      attr_accessor :access_token, :adapter, :api_endpoint, :client_id, :client_secret, :redirect_uri, :stubs, :user_agent
 
       class << self
         def keys
@@ -11,6 +11,7 @@ module Infusionsoft
             :api_endpoint,
             :client_id,
             :client_secret,
+            :redirect_uri,
             :stubs,
             :user_agent
           ]
