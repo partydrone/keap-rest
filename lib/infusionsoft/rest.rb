@@ -2,7 +2,9 @@
 
 require "faraday"
 require "faraday_middleware"
-require_relative "rest/version"
+
+require "infusionsoft/rest/client"
+require "infusionsoft/rest/default"
 
 module Infusionsoft
   module REST
@@ -71,5 +73,16 @@ module Infusionsoft
     autoload :Task, "infusionsoft/rest/objects/task"
     autoload :User, "infusionsoft/rest/objects/user"
     autoload :UserInfo, "infusionsoft/rest/objects/user_info"
+
+    class << self
+      include Infusionsoft::REST::Configurable
+
+      def client
+        return @client if defined?(@client) && @client.same_options?(options)
+        @client = Infusionsoft::REST::Client.new(options)
+      end
+    end
   end
 end
+
+Infusionsoft::REST.setup

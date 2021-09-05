@@ -1,19 +1,23 @@
+require "infusionsoft/rest/configurable"
+
 module Infusionsoft
   module REST
     class Client
-      BASE_URL = "https://api.infusionsoft.com/crm/rest/v1"
+      include Infusionsoft::REST::Configurable
 
-      attr_reader :access_token, :adapter
-
-      def initialize(access_token:, adapter: Faraday.default_adapter, stubs: nil)
-        @access_token = access_token
-        @adapter = adapter
-        @stubs = stubs
+      def initialize(options = {})
+        Infusionsoft::REST::Configurable.keys.each do |key|
+          value = options.key?(key) ? options[key] : Infusionsoft::REST.instance_variable_get(:"@%{key}")
+          instance_variable_set(:"@#{key}", value)
+        end
       end
 
       def inspect
         inspected = super
+
         inspected.gsub!(@access_token, "#{"*" * 24}#{@access_token[24..-1]}") if @access_token # standard:disable Style/SlicingWithRange
+        inspected.gsub!(@client_secret, "#{"*" * 12}#{@client_secret[12..-1]}") if @client_secret # standard:disable Style/SlicingWithRange
+
         inspected
       end
 
@@ -110,7 +114,7 @@ module Infusionsoft
       end
 
       def connection
-        @connection ||= Faraday.new(BASE_URL) do |http|
+        @connection ||= Faraday.new(api_endpoint) do |http|
           http.headers[:accept] = "application/json, */*"
           http.headers[:user_agent] = "Infusionsoft REST Ruby SDK v#{Infusionsoft::REST::VERSION}"
 
