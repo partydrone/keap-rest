@@ -33,6 +33,8 @@ module Infusionsoft
     autoload :TagsResource, "infusionsoft/rest/resources/tags_resource"
     autoload :TasksResource, "infusionsoft/rest/resources/tasks_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
+    autoload :UserInfoResource, "infusionsoft/rest/resources/user_info_resource"
+    autoload :UsersResource, "infusionsoft/rest/resources/users_resource"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :Account, "infusionsoft/rest/objects/account"

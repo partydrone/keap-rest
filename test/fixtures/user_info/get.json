@@ -1,0 +1,10 @@
+{
+  "email": "string",
+  "family_name": "string",
+  "given_name": "string",
+  "global_user_id": 0,
+  "infusionsoft_id": "string",
+  "middle_name": "string",
+  "preferred_name": "string",
+  "sub": "string"
+}

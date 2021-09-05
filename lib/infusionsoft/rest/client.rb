@@ -101,6 +101,14 @@ module Infusionsoft
         TransactionsResource.new(self)
       end
 
+      def user_info
+        UserInfoResource.new(self)
+      end
+
+      def users
+        UsersResource.new(self)
+      end
+
       def connection
         @connection ||= Faraday.new(BASE_URL) do |http|
           http.headers[:accept] = "application/json, */*"

@@ -1,0 +1,44 @@
+{
+  "address": {
+    "country_code": "string",
+    "line1": "string",
+    "line2": "string",
+    "locality": "string",
+    "region": "string",
+    "zip_code": "string",
+    "zip_four": "string"
+  },
+  "company_name": "string",
+  "created_by": 0,
+  "date_created": "2021-09-04T18:35:50.330Z",
+  "email_address": "string",
+  "family_name": "string",
+  "fax_numbers": [
+    {
+      "field": "FAX1",
+      "number": "string",
+      "type": "string"
+    }
+  ],
+  "given_name": "string",
+  "global_user_id": 0,
+  "id": 0,
+  "infusionsoft_id": "string",
+  "job_title": "string",
+  "last_updated": "2021-09-04T18:35:50.330Z",
+  "last_updated_by": 0,
+  "middle_name": "string",
+  "partner": true,
+  "phone_numbers": [
+    {
+      "extension": "string",
+      "field": "PHONE1",
+      "number": "string",
+      "type": "string"
+    }
+  ],
+  "preferred_name": "string",
+  "status": "Active",
+  "time_zone": "string",
+  "website": "string"
+}
