@@ -93,6 +93,10 @@ module Infusionsoft
         TagsResource.new(self)
       end
 
+      def tasks
+        TasksResource.new(self)
+      end
+
       def transactions
         TransactionsResource.new(self)
       end

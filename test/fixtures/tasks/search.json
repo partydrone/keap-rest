@@ -1,0 +1,28 @@
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "sync_token": "string",
+  "tasks": [
+    {
+      "completed": true,
+      "completion_date": "string",
+      "contact": {
+        "email": "string",
+        "first_name": "string",
+        "id": 0,
+        "last_name": "string"
+      },
+      "creation_date": "string",
+      "description": "string",
+      "due_date": "string",
+      "modification_date": "string",
+      "priority": 0,
+      "remind_time": 0,
+      "title": "string",
+      "type": "string",
+      "url": "string",
+      "user_id": 0
+    }
+  ]
+}

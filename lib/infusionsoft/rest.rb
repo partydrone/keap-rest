@@ -31,6 +31,7 @@ module Infusionsoft
     autoload :SettingsResource, "infusionsoft/rest/resources/settings_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
     autoload :TagsResource, "infusionsoft/rest/resources/tags_resource"
+    autoload :TasksResource, "infusionsoft/rest/resources/tasks_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
 
     # Classes used to return a nicer object wrapping the response data
