@@ -9,7 +9,7 @@ module Infusionsoft
       def get(appointment_id)
         Appointment.new get_request("appointments/#{appointment_id}").body
       end
-      alias_method :retrieve
+      alias_method :retrieve, :get
 
       def create(**attributes)
         Appointment.new post_request("appointments", body: attributes).body

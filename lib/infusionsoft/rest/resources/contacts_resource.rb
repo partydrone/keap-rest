@@ -9,7 +9,7 @@ module Infusionsoft
       def get(contact_id)
         Contact.new get_request("contacts/#{contact_id}").body
       end
-      alias_method :retrieve
+      alias_method :retrieve, :get
 
       def create(**attributes)
         Contact.new post_request("contacts", body: attributes).body
@@ -41,7 +41,7 @@ module Infusionsoft
         response = get_request("contacts/#{contact_id}/emails", params: params)
         Collection.from_response(response, key: "emails", type: Email)
       end
-      alias_method :list_emails
+      alias_method :list_emails, :emails
 
       def add_email(contact_id, **attributes)
         Email.new post_request("contacts/#{contact_id}/emails", body: attributes).body

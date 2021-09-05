@@ -9,7 +9,7 @@ module Infusionsoft
       def get(company_id, **params)
         Company.new get_request("companies/#{company_id}", params: params).body
       end
-      alias_method :retrieve
+      alias_method :retrieve, :get
 
       def create(**attributes)
         Company.new post_request("companies", body: attributes).body
