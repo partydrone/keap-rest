@@ -89,6 +89,10 @@ module Infusionsoft
         SubscriptionsResource.new(self)
       end
 
+      def tags
+        TagsResource.new(self)
+      end
+
       def transactions
         TransactionsResource.new(self)
       end

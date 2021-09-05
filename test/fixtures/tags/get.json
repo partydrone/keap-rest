@@ -1,0 +1,10 @@
+{
+  "category": {
+    "description": "string",
+    "id": 0,
+    "name": "string"
+  },
+  "description": "string",
+  "id": 0,
+  "name": "string"
+}

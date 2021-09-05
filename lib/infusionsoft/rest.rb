@@ -30,6 +30,7 @@ module Infusionsoft
     autoload :ProductsResource, "infusionsoft/rest/resources/products_resource"
     autoload :SettingsResource, "infusionsoft/rest/resources/settings_resource"
     autoload :SubscriptionsResource, "infusionsoft/rest/resources/subscriptions_resource"
+    autoload :TagsResource, "infusionsoft/rest/resources/tags_resource"
     autoload :TransactionsResource, "infusionsoft/rest/resources/transactions_resource"
 
     # Classes used to return a nicer object wrapping the response data
@@ -63,6 +64,7 @@ module Infusionsoft
     autoload :Stage, "infusionsoft/rest/objects/stage"
     autoload :Subscription, "infusionsoft/rest/objects/subscription"
     autoload :Tag, "infusionsoft/rest/objects/tag"
+    autoload :TagCategory, "infusionsoft/rest/objects/tag_category"
     autoload :Task, "infusionsoft/rest/objects/task"
     autoload :User, "infusionsoft/rest/objects/user"
     autoload :UserInfo, "infusionsoft/rest/objects/user_info"

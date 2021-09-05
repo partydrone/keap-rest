@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "contact": {
+        "email": "string",
+        "first_name": "string",
+        "id": 0,
+        "last_name": "string"
+      },
+      "date_applied": "2021-09-04T18:35:50.295Z"
+    }
+  ],
+  "count": 0,
+  "next": "string",
+  "previous": "string"
+}

@@ -1,0 +1,15 @@
+{
+  "companies": [
+    {
+      "company": {
+        "company_name": "string",
+        "email": "string",
+        "id": 0
+      },
+      "date_applied": "2021-09-04T18:35:50.290Z"
+    }
+  ],
+  "count": 0,
+  "next": "string",
+  "previous": "string"
+}
