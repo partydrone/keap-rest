@@ -7,7 +7,7 @@ module Infusionsoft
 
       def initialize(options = {})
         Infusionsoft::REST::Configurable.keys.each do |key|
-          value = options.key?(key) ? options[key] : Infusionsoft::REST.instance_variable_get(:"@%{key}")
+          value = options.key?(key) ? options[key] : Infusionsoft::REST.instance_variable_get(:"@#{key}")
           instance_variable_set(:"@#{key}", value)
         end
       end
