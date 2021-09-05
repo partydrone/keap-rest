@@ -16,11 +16,12 @@ module Infusionsoft
         end
       end
 
-      def initialize(data:, count:, next_page:, previous_page:)
+      def initialize(data:, count:, next_page:, previous_page:, sync_token: nil)
         @data = data
         @count = count
         @next_page = next_page&.empty? ? nil : next_page
         @previous_page = previous_page&.empty? ? nil : previous_page
+        @sync_token = sync_token&.empty? ? nil : sync_token
       end
     end
   end
