@@ -3,13 +3,13 @@
 require "faraday"
 require "faraday_middleware"
 
-require "infusionsoft/rest/client"
-require "infusionsoft/rest/default"
-
 module Infusionsoft
   module REST
     autoload :Client, "infusionsoft/rest/client"
     autoload :Collection, "infusionsoft/rest/collection"
+    autoload :Configurable, "infusionsoft/rest/configurable"
+    autoload :Connection, "infusionsoft/rest/connection"
+    autoload :Default, "infusionsoft/rest/default"
     autoload :Error, "infusionsoft/rest/error"
     autoload :Object, "infusionsoft/rest/object"
     autoload :Resource, "infusionsoft/rest/resource"
