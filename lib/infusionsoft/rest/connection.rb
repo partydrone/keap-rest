@@ -9,6 +9,8 @@ module Infusionsoft
           http.request :oauth2, access_token, token_type: :bearer
           http.request :json
 
+          http.use Infusionsoft::REST::Response::RaiseError
+
           http.response :dates
           http.response :json, content_type: "application/json"
           # http.response :logger do |logger|

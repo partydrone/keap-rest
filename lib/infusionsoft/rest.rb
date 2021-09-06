@@ -13,6 +13,7 @@ module Infusionsoft
     autoload :Error, "infusionsoft/rest/error"
     autoload :Object, "infusionsoft/rest/object"
     autoload :Resource, "infusionsoft/rest/resource"
+    autoload :Response, "infusionsoft/rest/response"
 
     # High-level categories of API calls
     autoload :AccountResource, "infusionsoft/rest/resources/account_resource"
