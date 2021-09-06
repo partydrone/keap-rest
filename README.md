@@ -23,8 +23,11 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-contacts = Infusionsoft::REST::Contact.list
-contact = Infusionsoft::REST::Contact.create_or_update email: "john@example.com", first_name: "John", last_name: "Doe"
+# Provide authentication credentials
+client = Infusionsoft::REST::Client.new(access_token: "my_access_token")
+
+# Get current account info
+client.account.info
 ```
 
 ## Development
