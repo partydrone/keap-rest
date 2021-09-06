@@ -20,14 +20,32 @@ Or install it yourself as:
 
     $ gem install infusionsoft-rest
 
+## Configuration
+
+Use the configuration object to configure the client:
+
+```ruby
+Infusionsoft::REST.configure do |config|
+  config.client_id = "my_client_id"
+  config.client_secret = "my_client_secret"
+  config.redirect_uri = "http://localhost:3000"
+end
+```
+
 ## Usage
 
 ```ruby
 # Provide authentication credentials
 client = Infusionsoft::REST::Client.new(access_token: "my_access_token")
 
-# Get current account info
-client.account.info
+# Get current account profile
+client.account_profile
+
+# Get a list of contacts
+contacts = client.contacts
+
+# …or a single contact
+contact = client.contact(42)
 ```
 
 ## Development

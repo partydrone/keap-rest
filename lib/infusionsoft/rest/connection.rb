@@ -1,6 +1,26 @@
 module Infusionsoft
   module REST
     module Connection
+      def get(url, params: {}, headers: {})
+        request :get, url, params, headers
+      end
+
+      def post(url, body:, headers: {})
+        request :post, url, body, headers
+      end
+
+      def put(url, body:, headers: {})
+        request :put, url, body, headers
+      end
+
+      def patch(url, body:, headers: {})
+        request :patch, url, body, headers
+      end
+
+      def delete(url, params: {}, headers: {})
+        request :delete, url, params, headers
+      end
+
       def connection
         @connection ||= Faraday.new(api_endpoint) do |http|
           http.headers[:accept] = "application/json, */*"
@@ -19,6 +39,14 @@ module Infusionsoft
 
           http.adapter adapter, @stubs
         end
+      end
+
+      private
+
+      def request(method, path, data, headers = {})
+        connection.send(method, path, data, headers)
+      rescue Infusionsoft::REST::Error => error
+        raise error
       end
     end
   end

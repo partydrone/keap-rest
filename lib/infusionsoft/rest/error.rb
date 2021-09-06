@@ -1,22 +1,24 @@
 module Infusionsoft
   module REST
     class Error < StandardError
-      def self.from_response(response)
-        status = response.status
+      class << self
+        def from_response(response)
+          status = response.status
 
-        if klass = case status
-          when 400 then Infusionsoft::REST::BadRequest
-          when 401 then Infusionsoft::REST::Unauthorized
-          when 403 then Infusionsoft::REST::Forbidden
-          when 404 then Infusionsoft::REST::NotFound
-          when 422 then Infusionsoft::REST::UnprocessableEntity
-          when 400..499 then Infusionsoft::REST::ClientError
-          when 500 then Infusionsoft::REST::InternetServerError
-          when 503 then Infusionsoft::REST::ServiceUnavailable
-          when 500..599 then Infusionsoft::REST::ServerError
+          if klass = case status
+            when 400 then Infusionsoft::REST::BadRequest
+            when 401 then Infusionsoft::REST::Unauthorized
+            when 403 then Infusionsoft::REST::Forbidden
+            when 404 then Infusionsoft::REST::NotFound
+            when 422 then Infusionsoft::REST::UnprocessableEntity
+            when 400..499 then Infusionsoft::REST::ClientError
+            when 500 then Infusionsoft::REST::InternetServerError
+            when 503 then Infusionsoft::REST::ServiceUnavailable
+            when 500..599 then Infusionsoft::REST::ServerError
+            end
+
+            klass.new(response)
           end
-
-          klass.new(response)
         end
       end
 

@@ -1,6 +1,6 @@
 module Infusionsoft
   module REST
-    class Account < Object
+    class AccountProfile < Object
     end
   end
 end
