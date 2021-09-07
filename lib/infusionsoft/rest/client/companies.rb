@@ -32,6 +32,15 @@ module Infusionsoft
         end
         alias_method :retrieve_company, :company
 
+        # Creates a new company as the authenticated user.
+        #
+        # @param address [Hash] An address.
+        # @option address [String] :country_code A three-character country code
+        # @option address [String] :line1
+        # @return [Company] A company object
+        # @note Company must contain at least the `company_name`. The `country_code`
+        #   is required if `region` is specified.
+        # @see https://developer.infusionsoft.com/docs/rest/#!/Company/createCompanyUsingPOST
         def create_company(**attributes)
           Company.new post("companies", body: attributes).body
         end
