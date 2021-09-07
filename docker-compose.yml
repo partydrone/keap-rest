@@ -5,3 +5,11 @@ services:
     build: .
     volumes:
       - .:/opt/gem:cached
+
+  docs:
+    build: .
+    command: ['yard', 'server', '--reload']
+    ports:
+      - 8808:8808
+    volumes:
+      - .:/opt/gem:cached
