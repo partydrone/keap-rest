@@ -18,15 +18,15 @@ module Infusionsoft
         end
 
         def update_appointment(appointment_id, **attributes)
-          Appointment.new patch("appointments/#{appointment_id}", body: attributes)
+          Appointment.new patch("appointments/#{appointment_id}", body: attributes).body
         end
 
         def replace_appointment(appointment_id, **attributes)
-          Appointment.new put("appointments/#{appointment_id}", body: attributes)
+          Appointment.new put("appointments/#{appointment_id}", body: attributes).body
         end
 
         def delete_appointment(appointment_id)
-          delete("appointments/#{appointment_id}")
+          delete("appointments/#{appointment_id}").body
         end
 
         def appointment_model
@@ -34,7 +34,7 @@ module Infusionsoft
         end
 
         def create_appointment_custom_field(**attributes)
-          Object.new post("appointments/model/cusomFields", body: attributes)
+          Object.new post("appointments/model/cusomFields", body: attributes).body
         end
       end
     end

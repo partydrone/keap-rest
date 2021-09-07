@@ -26,7 +26,7 @@ module Infusionsoft
         end
 
         def queue_email(**attributes)
-          post("emails/queue", body: attributes)
+          post("emails/queue", body: attributes).body
         end
         alias_method :send_email, :queue_email
 

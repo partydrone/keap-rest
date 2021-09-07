@@ -24,7 +24,7 @@ module Infusionsoft
         alias_method :list_tag_companies, :tag_companies
 
         def remove_tag_from_contacts(tag_id, **attributes)
-          delete("tags/#{tag_id}/contacts", body: attributes)
+          delete("tags/#{tag_id}/contacts", body: attributes).body
         end
 
         def tag_contacts(tag_id, **params)
@@ -39,7 +39,7 @@ module Infusionsoft
         end
 
         def remove_tag_from_contact(tag_id, contact_id)
-          delete("tags/#{tag_id}/contacts/#{contact_id}")
+          delete("tags/#{tag_id}/contacts/#{contact_id}").body
         end
 
         def create_tag_category(**attributes)

@@ -26,7 +26,7 @@ module Infusionsoft
         end
 
         def delete_contact(contact_id)
-          delete("contacts/#{contact_id}")
+          delete("contacts/#{contact_id}").body
         end
 
         def contact_credit_cards(contact_id)
@@ -60,11 +60,11 @@ module Infusionsoft
         end
 
         def remove_contact_tags(contact_id, **params)
-          delete("contacts/#{contact_id}/tags", params: params)
+          delete("contacts/#{contact_id}/tags", params: params).body
         end
 
         def remove_contact_tag(contact_id, tag_id)
-          delete("contacts/#{contact_id}/tags/#{tag_id}")
+          delete("contacts/#{contact_id}/tags/#{tag_id}").body
         end
 
         def contact_model

@@ -33,17 +33,17 @@ module Infusionsoft
         alias_method :update_hook_subscription, :update_hook
 
         def delete_hook(key)
-          delete("hooks/#{key}")
+          delete("hooks/#{key}").body
         end
         alias_method :delete_hook_subscription, :delete_hook
 
         def verify_hook(key)
-          HookSubscription.new post("hooks/#{key}/verify").body
+          HookSubscription.new post("hooks/#{key}/verify", body: nil).body
         end
         alias_method :verify_hook_subscription, :verify_hook
 
         def delayed_verify_hook(key)
-          HookSubscription.new post("hooks/#{key}/delayedVerify").body
+          HookSubscription.new post("hooks/#{key}/delayedVerify", body: nil).body
         end
         alias_method :delayed_verify_hook_subscription, :delayed_verify_hook
         alias_method :verify_hook_delayed, :delayed_verify_hook

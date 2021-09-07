@@ -22,15 +22,15 @@ module Infusionsoft
         end
 
         def delete_product(product_id)
-          delete("products/#{product_id}")
+          delete("products/#{product_id}").body
         end
 
         def delete_product_image(product_id)
-          delete("products/#{product_id}/image")
+          delete("products/#{product_id}/image").body
         end
 
         def upload_product_image(product_id, **attributes)
-          post("products/#{product_id}/image", body: attributes)
+          post("products/#{product_id}/image", body: attributes).body
         end
 
         def retrieve_product_subscription(product_id, subscription_id)
@@ -42,7 +42,7 @@ module Infusionsoft
         end
 
         def delete_product_subscription(product_id, subscription_id)
-          delete("products/#{product_id}/subscriptions/#{subscription_id}")
+          delete("products/#{product_id}/subscriptions/#{subscription_id}").body
         end
 
         # @deprecated

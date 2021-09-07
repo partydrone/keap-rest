@@ -23,7 +23,7 @@ module Infusionsoft
         end
 
         def delete_file(file_id)
-          delete("files/#{file_id}")
+          delete("files/#{file_id}").body
         end
       end
     end

@@ -26,7 +26,7 @@ module Infusionsoft
         end
 
         def delete_note(note_id)
-          delete("notes/#{note_id}")
+          delete("notes/#{note_id}").body
         end
 
         def note_model

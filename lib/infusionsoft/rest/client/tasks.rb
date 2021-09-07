@@ -26,7 +26,7 @@ module Infusionsoft
         end
 
         def delete_task(task_id)
-          delete("tasks/#{task_id}")
+          delete("tasks/#{task_id}").body
         end
 
         def task_model
@@ -40,8 +40,6 @@ module Infusionsoft
         def search_task(**params)
           response = get("tasks/search", params: params)
           Collection.from_response(response, key: "tasks", type: Task)
-          # TODO: Create collection class that includes `sync_token` in the
-          # root node.
         end
       end
     end

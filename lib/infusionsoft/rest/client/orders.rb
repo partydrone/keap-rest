@@ -18,7 +18,7 @@ module Infusionsoft
         end
 
         def delete_order(order_id)
-          delete("orders/#{order_id}")
+          delete("orders/#{order_id}").body
         end
 
         def create_order_item(order_id, **attributes)
@@ -26,7 +26,7 @@ module Infusionsoft
         end
 
         def delete_order_item(order_id, order_item_id)
-          delete("orders/#{order_id}/items/#{order_item_id}")
+          delete("orders/#{order_id}/items/#{order_item_id}").body
         end
 
         def replace_order_pay_plan(order_id, **attributes)
@@ -39,7 +39,7 @@ module Infusionsoft
         end
 
         def create_order_payment(order_id, **attributes)
-          OrderPayment.new post("orders/#{order_id}/payments", body: attributes)
+          OrderPayment.new post("orders/#{order_id}/payments", body: attributes).body
         end
 
         def retrieve_order_transactions(order_id)
