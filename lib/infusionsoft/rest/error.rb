@@ -5,18 +5,17 @@ module Infusionsoft
         def from_response(response)
           status = response.status
 
-          if klass = case status
-            when 400 then Infusionsoft::REST::BadRequest
-            when 401 then Infusionsoft::REST::Unauthorized
-            when 403 then Infusionsoft::REST::Forbidden
-            when 404 then Infusionsoft::REST::NotFound
-            when 422 then Infusionsoft::REST::UnprocessableEntity
-            when 400..499 then Infusionsoft::REST::ClientError
-            when 500 then Infusionsoft::REST::InternetServerError
-            when 503 then Infusionsoft::REST::ServiceUnavailable
-            when 500..599 then Infusionsoft::REST::ServerError
-            end
-
+          if (klass = case status
+              when 400 then Infusionsoft::REST::BadRequest
+              when 401 then Infusionsoft::REST::Unauthorized
+              when 403 then Infusionsoft::REST::Forbidden
+              when 404 then Infusionsoft::REST::NotFound
+              when 422 then Infusionsoft::REST::UnprocessableEntity
+              when 400..499 then Infusionsoft::REST::ClientError
+              when 500 then Infusionsoft::REST::InternetServerError
+              when 503 then Infusionsoft::REST::ServiceUnavailable
+              when 500..599 then Infusionsoft::REST::ServerError
+              end)
             klass.new(response)
           end
         end
@@ -33,10 +32,10 @@ module Infusionsoft
         return nil if @response.nil?
 
         message = "#{@response.method.to_s.upcase} "
-        message << "#{@response.url.to_s}: "
+        message << "#{@response.url}: "
         message << "#{@response.status} - "
-        message << "#{@response.body['message']}" if @response.body["message"]
-        message << "#{@response.body['fault']['faultstring']}" if @response.body["fault"]
+        message << @response.body["message"].to_s if @response.body["message"]
+        message << (@response.body["fault"]["faultstring"]).to_s if @response.body["fault"]
         message << "\n\n#{@response.body}\n\n"
 
         message
