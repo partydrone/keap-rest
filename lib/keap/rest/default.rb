@@ -3,7 +3,7 @@ require "keap/rest/version"
 module Keap
   module REST
     module Default
-      API_ENDPOINT = "https://api.keap.com/crm/rest/v1".freeze
+      API_ENDPOINT = "https://api.infusionsoft.com/crm/rest/v1".freeze
       USER_AGENT = "Keap REST Ruby Gem #{Keap::REST::VERSION}".freeze
 
       class << self
