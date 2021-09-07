@@ -1,6 +1,6 @@
 module Infusionsoft
   module REST
-    class Merchant < Object
+    class MerchantAccount < Object
     end
   end
 end

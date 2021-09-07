@@ -11,6 +11,7 @@ module Infusionsoft
     autoload :Connection, "infusionsoft/rest/connection"
     autoload :Default, "infusionsoft/rest/default"
     autoload :Error, "infusionsoft/rest/error"
+    autoload :MerchantsCollection, "infusionsoft/rest/merchants_collection"
     autoload :Object, "infusionsoft/rest/object"
     autoload :Response, "infusionsoft/rest/response"
 
@@ -31,7 +32,7 @@ module Infusionsoft
     autoload :EmailAddress, "infusionsoft/rest/objects/email_address"
     autoload :File, "infusionsoft/rest/objects/file"
     autoload :HookSubscription, "infusionsoft/rest/objects/hook_subscription"
-    autoload :Merchant, "infusionsoft/rest/objects/merchant"
+    autoload :MerchantAccount, "infusionsoft/rest/objects/merchant_account"
     autoload :Note, "infusionsoft/rest/objects/note"
     autoload :Opportunity, "infusionsoft/rest/objects/opportunity"
     autoload :Order, "infusionsoft/rest/objects/order"
