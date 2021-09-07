@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in infusionsoft-rest.gemspec
+# Specify your gem's dependencies in keap-rest.gemspec
 gemspec
 
 gem "rake"

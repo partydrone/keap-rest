@@ -11,7 +11,7 @@ RUN gem install yard
 
 WORKDIR /opt/gem
 
-COPY lib/infusionsoft/rest/version.rb ./lib/infusionsoft/rest/version.rb
+COPY lib/keap/rest/version.rb ./lib/keap/rest/version.rb
 COPY Gemfile* *.gemspec ./
 RUN bundle install
 COPY . .

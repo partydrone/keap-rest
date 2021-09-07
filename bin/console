@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "infusionsoft/rest"
+require "keap/rest"
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
@@ -11,7 +11,7 @@ require "infusionsoft/rest"
 # require "pry"
 # Pry.start
 
-@client ||= Infusionsoft::REST.client
+@client ||= Keap::REST.client
 
 require "irb"
 IRB.start(__FILE__)

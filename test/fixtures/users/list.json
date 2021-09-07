@@ -28,7 +28,7 @@
       "given_name": "string",
       "global_user_id": 0,
       "id": 0,
-      "infusionsoft_id": "string",
+      "keap_id": "string",
       "job_title": "string",
       "last_updated": "2021-09-04T18:35:50.327Z",
       "last_updated_by": 0,
