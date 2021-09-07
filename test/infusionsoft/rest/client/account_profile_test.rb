@@ -6,7 +6,7 @@ class AccountProfileTest < Minitest::Test
     client = Infusionsoft::REST::Client.new(access_token: "fake", adapter: :test, stubs: stub)
     account = client.account_profile
 
-    assert_equal Infusionsoft::REST::Account, account.class
+    assert_equal Infusionsoft::REST::AccountProfile, account.class
     assert_equal "admin@example.com", account.email
   end
 
