@@ -11,7 +11,7 @@ require "infusionsoft/rest"
 # require "pry"
 # Pry.start
 
-client = Infusionsoft::REST.client
+@client ||= Infusionsoft::REST.client
 
 require "irb"
 IRB.start(__FILE__)
