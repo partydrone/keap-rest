@@ -1,7 +1,7 @@
 module Keap
   module REST
     module Configurable
-      attr_accessor :access_token, :adapter, :api_endpoint, :client_id, :client_secret, :redirect_uri, :stubs, :user_agent
+      attr_accessor :access_token, :adapter, :api_endpoint, :authorize_url, :client_id, :client_secret, :redirect_uri, :stubs, :token_url, :user_agent
 
       class << self
         def keys
@@ -9,10 +9,12 @@ module Keap
             :access_token,
             :adapter,
             :api_endpoint,
+            :authorize_url,
             :client_id,
             :client_secret,
             :redirect_uri,
             :stubs,
+            :token_url,
             :user_agent
           ]
         end

@@ -3,6 +3,7 @@ module Keap
     class Client
       autoload :AccountInfo, "keap/rest/client/account_info"
       autoload :Affiliates, "keap/rest/client/affiliates"
+      autoload :Appointments, "keap/rest/client/appointments"
       autoload :Campaigns, "keap/rest/client/campaigns"
       autoload :Companies, "keap/rest/client/companies"
       autoload :Contacts, "keap/rest/client/contacts"
@@ -28,6 +29,7 @@ module Keap
       include Keap::REST::Connection
       include Keap::REST::Client::AccountInfo
       include Keap::REST::Client::Affiliates
+      include Keap::REST::Client::Appointments
       include Keap::REST::Client::Campaigns
       include Keap::REST::Client::Companies
       include Keap::REST::Client::Contacts

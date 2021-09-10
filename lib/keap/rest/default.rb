@@ -4,6 +4,8 @@ module Keap
   module REST
     module Default
       API_ENDPOINT = "https://api.infusionsoft.com/crm/rest/v1".freeze
+      AUTHORIZE_URL = "https://accounts.infusionsoft.com/app/oauth/authorize".freeze
+      TOKEN_URL = "https://api.infusionsoft.com/token".freeze
       USER_AGENT = "Keap REST Ruby Gem #{Keap::REST::VERSION}".freeze
 
       class << self
@@ -23,6 +25,10 @@ module Keap
           ENV["KEAP_REST_API_ENDPOINT"] || API_ENDPOINT
         end
 
+        def authorize_url
+          ENV["KEAP_REST_AUTHORIZE_URL"] || AUTHORIZE_URL
+        end
+
         def client_id
           ENV["KEAP_REST_CLIENT_ID"] || ENV["KEAP_CLIENT_ID"]
         end
@@ -36,6 +42,10 @@ module Keap
         end
 
         def stubs
+        end
+
+        def token_url
+          ENV["KEAP_REST_TOKEN_URL"] || TOKEN_URL
         end
 
         def user_agent

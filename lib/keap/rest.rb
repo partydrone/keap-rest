@@ -14,6 +14,7 @@ module Keap
     autoload :MerchantsCollection, "keap/rest/merchants_collection"
     autoload :Object, "keap/rest/object"
     autoload :Response, "keap/rest/response"
+    autoload :Token, "keap/rest/token"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :AccountProfile, "keap/rest/objects/account_profile"

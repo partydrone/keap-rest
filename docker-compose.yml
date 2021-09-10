@@ -3,6 +3,10 @@ version: '3.7'
 services:
   ruby:
     build: .
+    environment:
+      KEAP_CLIENT_ID: gGxaPEZ1eQAgWbG3n3jc0LBuZjsRYWK1
+      KEAP_CLIENT_SECRET: lTZGNuoaYMLwFO9r
+      KEAP_REDIRECT_URI: http://localhost:3000
     volumes:
       - .:/opt/gem:cached
 

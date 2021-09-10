@@ -24,9 +24,9 @@ module Keap
       def connection
         @connection ||= Faraday.new(api_endpoint) do |http|
           http.headers[:accept] = "application/json, */*"
-          http.headers[:user_agent] = "Keap REST Ruby SDK v#{Keap::REST::VERSION}"
+          http.headers[:user_agent] = user_agent
 
-          http.request :oauth2, access_token, token_type: :bearer
+          http.request :authorization, :Bearer, access_token
           http.request :json
 
           http.use Keap::REST::Response::RaiseError
