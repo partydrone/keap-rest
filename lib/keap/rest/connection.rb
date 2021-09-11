@@ -41,11 +41,17 @@ module Keap
         end
       end
 
+      def last_response
+        @last_response if defined? @last_response
+      end
+
       private
 
       def request(method, path, data, headers = {})
-        connection.send(method, path, data, headers)
+        @last_response = response = connection.send(method, path, data, headers)
+        response
       rescue Keap::REST::Error => error
+        @last_response = nil
         raise error
       end
     end

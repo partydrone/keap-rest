@@ -42,7 +42,7 @@ module Keap
           }
 
           response = connection.post do |req|
-            req.headers["Authorization"] = "Basic #{Base64.strict_encode64(Keap::REST.client_id + ":" + Keap::REST.client_secret)}"
+            req.headers["Authorization"] = "Basic " + Base64.strict_encode64(Keap::REST.client_id + ":" + Keap::REST.client_secret)
             req.body = body
           end
 
