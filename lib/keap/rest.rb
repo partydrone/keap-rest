@@ -4,6 +4,8 @@ require "faraday"
 require "faraday_middleware"
 
 module Keap
+  # Ruby toolkit for the Keap REST API.
+  #
   module REST
     autoload :Client, "keap/rest/client"
     autoload :Collection, "keap/rest/collection"
@@ -15,6 +17,7 @@ module Keap
     autoload :Object, "keap/rest/object"
     autoload :Response, "keap/rest/response"
     autoload :Token, "keap/rest/token"
+    autoload :TokenStore, "keap/rest/token_store"
 
     # Classes used to return a nicer object wrapping the response data
     autoload :AccountProfile, "keap/rest/objects/account_profile"

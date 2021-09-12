@@ -58,6 +58,10 @@ module Keap
         end
       end
 
+      # Text representation of the client, masking tokens.
+      #
+      # @return [String]
+      #
       def inspect
         inspected = super
 

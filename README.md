@@ -32,6 +32,43 @@ Keap::REST.configure do |config|
 end
 ```
 
+### Using Environment Variables
+
+You can also set th
+
+## Authentication
+
+To make calls against the Keap REST API you will need to first obtain an Access
+Token by requesting authorization, then trading in the resulting code. You will
+receive a Refresh Token along with it, allowing you to create new Access Tokens
+as they expire.
+
+### Rails Example
+
+In a view file, create a link to the APIs authorization endpoint:
+
+```erb
+<%= link_to "Get Keap access token", Keap::REST::Token.auth_url %>
+```
+
+If you didn't configure the gem with a default `redirect_uri`, or you want to
+override it, you can include it in the method call:
+
+```erb
+<%= link_to "Get Keap access token", Keap::REST::Token.auth_url(redirect_uri: "http://localhost:3000/auth/keap/callback") %>
+```
+
+In your callback controller, use the `code` returned by the authorization
+request to request an Access Token:
+
+```ruby
+class AuthController < ApplicationController
+  def keap
+    token = Keap::REST::Token.request(code: params[:code])
+  end
+end
+```
+
 ## Usage
 
 ```ruby
