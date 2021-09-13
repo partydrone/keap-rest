@@ -1,6 +1,10 @@
 module Keap
   module REST
     module Configurable
+      # @!attribute access_token
+      #   @return [String] OAuth2 access token for authentication.
+      # @!attribute adapter
+      #   @return [Faraday::Adapter] HTTP library adapter.
       attr_accessor :access_token, :adapter, :api_endpoint, :authorize_url, :client_id, :client_secret, :redirect_uri, :stubs, :token_url, :user_agent
 
       class << self

@@ -1,5 +1,7 @@
 module Keap
   module REST
+    # Client for the Keap REST API.
+    #
     class Client
       autoload :AccountInfo, "keap/rest/client/account_info"
       autoload :Affiliates, "keap/rest/client/affiliates"
