@@ -1,5 +1,23 @@
 # frozen_string_literal: true
 
+require "simplecov"
+require "simplecov-lcov"
+require "simplecov-tailwindcss"
+
+SimpleCov.start do
+  add_filter "/test/"
+  coverage_dir "test/coverage"
+
+  formatter SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::LcovFormatter,
+    SimpleCov::Formatter::TailwindFormatter
+  ])
+
+  add_group "Models", "lib/keap/rest/objects/"
+  add_group "Resources", "lib/keap/rest/client/"
+  add_group "Middleware", ["lib/keap/rest/request/", "lib/keap/rest/response/", "lib/keap/rest/middleware/"]
+end
+
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 require "keap/rest"
 require "minitest/autorun"

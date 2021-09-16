@@ -1,8 +1,6 @@
 # Keap::REST
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/keap/rest`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+![example workflow](https://github.com/partydrone/keap-rest/actions/workflows/ci.yml/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/56adf33da4a7588ea186/maintainability)](https://codeclimate.com/github/partydrone/keap-rest/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/56adf33da4a7588ea186/test_coverage)](https://codeclimate.com/github/partydrone/keap-rest/test_coverage)
 
 ## Installation
 
@@ -68,6 +66,10 @@ class AuthController < ApplicationController
   end
 end
 ```
+
+> :warning: If you didn't configure a default `redirect_uri` for the gem, you
+> must include the same `redirect_uri` used in your authorization request:
+> `Keap::REST::Token.request(code: params[:code], redirect_uri: "http://localhost:3000/auth/keap/callback")`
 
 ## Usage
 

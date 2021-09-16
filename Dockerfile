@@ -1,4 +1,4 @@
-FROM ruby:2.7
+FROM ruby:3.0
 LABEL author="Andrew Porter <partydrone@icloud.com>"
 
 ENV GEM_HOME /usr/local/bundle

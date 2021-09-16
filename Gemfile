@@ -10,3 +10,9 @@ gem "rake"
 gem "minitest", ">= 5.0.5"
 
 gem "standard"
+
+gem "simplecov", require: false
+
+gem "simplecov-lcov", require: false
+
+gem "simplecov-tailwindcss", require: false

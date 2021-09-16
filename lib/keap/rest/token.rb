@@ -6,15 +6,17 @@ module Keap
     # Object used for managing OAuth2 tokens for the Keap REST API.
     #
     class Token
-      # @return [String] The access token returned by the API.
-      attr_reader :access_token
-      # @return [String] The refresh token needed to request a new access token.
-      attr_reader :refresh_token
-      # @return [Integer] Number of seconds from when the access token was
-      #   issued before it expires.
-      attr_reader :expires_in
-      # @return [Time] Date and time when the access token expires.
-      attr_reader :expires_at
+      # @attribute [r] access_token
+      #   @return [String] The access token returned by the API.
+      # @attribute [r] refresh_token
+      #   @return [String] The refresh token needed to request a new access token.
+      # @attribute [r] expires_in
+      #   @return [Integer] Number of seconds from when the access token was
+      #     issued before it expires.
+      # @attribute [r] expires_at
+      #   @return [Time] Date and time when the access token expires.
+      #
+      attr_reader :access_token, :refresh_token, :expires_in, :expires_at
 
       class << self
         # Generate a URL for initiating an authorization request.
