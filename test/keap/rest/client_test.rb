@@ -2,13 +2,11 @@
 
 require "test_helper"
 
-class ClientTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Keap::REST::VERSION
-  end
+describe Keap::REST::Client do
+  subject { Keap::REST::Client }
 
-  def test_access_token
-    client = Keap::REST::Client.new access_token: "test"
-    assert_equal "test", client.access_token
+  it "has an access_token" do
+    client = subject.new access_token: "test"
+    _(client.access_token).must_equal "test"
   end
 end

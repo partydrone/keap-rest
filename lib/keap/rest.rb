@@ -58,6 +58,10 @@ module Keap
     class << self
       include Keap::REST::Configurable
 
+      # API client based on configured options {Configurable}
+      #
+      # @return [Keap::REST::Client] API wrapper
+      #
       def client
         return @client if defined?(@client) && @client.same_options?(options)
         @client = Keap::REST::Client.new(options)
