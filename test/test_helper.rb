@@ -32,7 +32,7 @@ class Minitest::Test
     [status, headers, File.read("test/fixtures/#{fixture}.json")]
   end
 
-  def stub_request(path, response:, method: :get, body: {})
+  def stub_request(method, path, response:, body: {})
     Faraday::Adapter::Test::Stubs.new do |stub|
       arguments = [method, "/crm/rest/v1/#{path}"]
       arguments << body.to_json if [:post, :put, :patch].include?(method)

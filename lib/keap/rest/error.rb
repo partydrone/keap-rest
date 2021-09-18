@@ -12,7 +12,7 @@ module Keap
               when 404 then Keap::REST::NotFound
               when 422 then Keap::REST::UnprocessableEntity
               when 400..499 then Keap::REST::ClientError
-              when 500 then Keap::REST::InternetServerError
+              when 500 then Keap::REST::InternalServerError
               when 503 then Keap::REST::ServiceUnavailable
               when 500..599 then Keap::REST::ServerError
               end)

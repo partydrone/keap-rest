@@ -4,11 +4,11 @@ describe Keap::REST do
   subject { Keap::REST }
 
   before do
-    subject.reset!
+    Keap::REST.reset!
   end
 
   after do
-    subject.reset!
+    Keap::REST.reset!
   end
 
   it "has a version number" do
