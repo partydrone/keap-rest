@@ -72,7 +72,7 @@ module Keap
           http.headers[:accept] = "application/json, */*"
           http.headers[:user_agent] = user_agent
 
-          http.request :authorization, :Bearer, access_token
+          http.request :authorization, :Bearer, -> { token_store.get_token }
           http.request :json
 
           http.use Keap::REST::Response::RaiseError
