@@ -1,5 +1,5 @@
 module Keap
-  module XMLRPC
+  module REST
     # The token store provides a central location where instances of {Client}
     # can access a valid access token to authorize each request to the API.
     #
